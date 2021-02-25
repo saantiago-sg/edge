@@ -1,4 +1,6 @@
 <!-- <p>navbar works!</p> -->
+<header>
+  <div id="bar" class="snakke-progress"></div>
 <nav>
   <div class="menu-content">
     <div class="menu-content-left">
@@ -36,7 +38,7 @@
 
     <div class="menu-actions">
       <div class="menu-actions-btn menu-actions-user">
-        <a href="">
+        <a routerLink="dashboard">
           <i class="material-icons">person</i>
           <p>Mi cuenta</p>
         </a>
@@ -49,15 +51,12 @@
       </div>
     </div>
   </div>
-    <!-- <div class="row">
-        <div class="col-2"></div>
-    </div> -->
 </nav>
 <div class="nav-menu">
     <div class="nav-container">
        <div class="nav-categories"> <!-- d-flex justify-content-start p-0-->
         <div class="dropdown">
-            <button class="dropbtn">Pisos y muros</button>
+           <a routerLink="category/pisos-y-muros"><button class="dropbtn">Pisos y muros</button></a> 
                   <div class="dropdown-content pisos-y-muros">
                       <div class="row pisos-y-muros">
                         <div class="col-6">
@@ -110,7 +109,7 @@
       </div>
 
           <div class="dropdown">
-            <button class="dropbtn">Adhesivo</button>
+            <a routerLink="category/adhesivo">  <button class="dropbtn">Adhesivo</button></a>
             <div class="dropdown-content">
               <div class="row adhesivos">
                 <div class="col-12">
@@ -150,7 +149,7 @@
             </div>
           </div>
           <div class="dropdown">
-            <button class="dropbtn">Accesorios para baño</button>
+            <a routerLink="category/accesorios-para-bano"> <button class="dropbtn">Accesorios para baño</button></a>
             <div class="dropdown-content">
               <div class="row accesorios-para-baño">
                 <div class="col-4">
@@ -211,7 +210,7 @@
           </div>
 
           <div class="dropdown">
-            <button class="dropbtn">Accesorios para cocina</button>
+            <a routerLink="category/accesorios-para-cocina"> <button class="dropbtn">Accesorios para cocina</button> </a>
             <div class="dropdown-content">
               <div class="row accesorios-para-cocina">
                 <div class="col-6">
@@ -241,7 +240,7 @@
           </div>
 
           <div class="dropdown">
-            <button class="dropbtn">Sanitarios y muebles para baño</button>
+            <a routerLink="category/sanitarios-y-muebles-para-bano"> <button class="dropbtn">Sanitarios y muebles para baño</button> </a> 
             <div class="dropdown-content">
              <div class="row sanitaros-y-muebles-para-bano">
                <div class="col-6">
@@ -283,7 +282,7 @@
           </div>
 
           <div class="dropdown">
-            <button class="dropbtn">Calentadores y tinacos</button>
+            <a routerLink="category/calentadores-y-tinacos"> <button class="dropbtn">Calentadores y tinacos</button> </a>
             <div class="dropdown-content">
              <div class="row calentadores-y-tinacos">
                <div class="col-10">
@@ -312,7 +311,7 @@
           </div>
          
           <div class="dropdown">
-            <button class="dropbtn">Complementos y otros</button>
+            <a routerLink="category/complementos-y-otros"> <button class="dropbtn">Complementos y otros</button> </a>
             <div class="dropdown-content">
              <div class="row complementos-y-otros">
                <div class="col-8">
@@ -345,15 +344,9 @@
              </div>
             </div>
           </div>
-        <!-- <a href="/category/complementos-y-otros">Pisos y muro</a>
-        <a href="/category/complementos-y-otros">Adhesivo</a>
-        <a href="/category/complementos-y-otros">Accesorios para cocina</a>
-        <a href="/category/complementos-y-otros">Accesorios para baño</a>
-        <a href="/category/complementos-y-otros">Sanitarios y muebles para baño</a>
-        <a href="/category/complementos-y-otros">Calentadores y tinacos</a>
-        <a href="/category/complementos-y-otros">Complementos y otros</a> -->
+
        </div> 
     </div>
 </div>
-
+</header>
 
