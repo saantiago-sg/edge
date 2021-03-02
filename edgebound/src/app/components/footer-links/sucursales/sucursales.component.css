@@ -1,0 +1,122 @@
+/* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+.branches-page {
+    width: 100%;
+}
+.branches-page h3 {
+    font-family: "MuseoSans-5";
+    width: 100%;
+    margin: 1rem 0 2rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+.branches-container {
+    max-width: 1260px;
+    align-items: flex-start;
+    margin: auto auto 2rem;
+}
+.branches-container, .branches-list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.branches-list {
+    align-items: stretch;
+    padding: 1rem;
+    background-color: #eee;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+.branches-map {
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #999;
+}
+.branches-info {
+    font-family: "MuseoSans-5";
+    width: 100%;
+    padding: .5rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+.branches-info h5 {
+    font-family: "MuseoSans-7";
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+.branches-info-item {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.branches-info-item h6 {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .25rem;
+}
+.branches-info-item h6 i {
+    color: #cc1f2d;
+    font-size: 1rem;
+    margin-right: .25rem;
+}
+.branches-info-item h6 span {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.branches-info-button {
+    margin: .5rem 0;
+    text-align: right;
+}
+.branches-info-button button {
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #222;
+}
+.branches-info-button button:hover {
+    background-color: #cc1f2d;
+}
+.branches-map iframe {
+    width: 100%;
+    min-height: 40vh;
+}
+
+
+@media screen and (min-width: 760px){
+    .branches-page h3 {
+        font-size: 2rem;
+    }
+    .branches-info {
+        width: 49%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+.branches-map iframe {
+    min-height: 70vh;
+}
+.branches-list {
+    width: 38%;
+    max-height: 70vh;
+}
+.branches-map {
+    width: 60%;
+    border-top: none;
+}
+.branches-info{
+    width: 100%;
+}
+
+}
+

@@ -6,15 +6,16 @@
             </div>
             <div class="layout-footer-links">
                 <ul>
-                    <li><a href="/quienes-somos">Quienes somos</a></li>
-                    <li><a href="/sucursales">Sucursales</a></li>
-                    <li><a href="/faq">Preguntas frecuentes</a></li>
-                    <li><a href="/envios">Envíos</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
-                    <li><a href="/terminos-y-condiciones">Términos y condiciones</a></li>
+                    <li><a routerLink="/quienes-somos">Quienes somos</a></li>
+                    <li><a routerLink="/sucursales">Sucursales</a></li>
+                    <li><a routerLink="/faq">Preguntas frecuentes</a></li>
+                    <li><a [routerLink]="['envios']">Envíos</a></li>
+                    <li><a routerLink="/contacto">Contacto</a></li>
+                    <li><a routerLink="/terminos-y-condiciones">Términos y condiciones</a></li>
                     <li><a href="https://blog.llanodelatorre.com.mx/" target="_blank" rel="noopener noreferrer">Blog</a></li>
                     <li><a href="https://llanodelatorre.mx/" target="_blank" rel="noopener noreferrer">Descarga tu factura</a></li>
-                    <li><a href="/mayoreo">Mayoreo </a></li><li><a href="https://s3.amazonaws.com/llanomx.wcaas.media/espots/footer-promociones/promociones_puntodeventa.xls" target="_self" rel="noopener noreferrer">Promociones </a></li>
+                    <li><a routerLink="/mayoreo">Mayoreo </a></li>
+                    <li><a href="https://s3.amazonaws.com/llanomx.wcaas.media/espots/footer-promociones/promociones_puntodeventa.xls" target="_self" rel="noopener noreferrer">Promociones </a></li>
                 </ul>
             </div>
             <div class="layout-footer-secure">

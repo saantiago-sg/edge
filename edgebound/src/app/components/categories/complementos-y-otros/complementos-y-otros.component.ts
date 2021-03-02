@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ComplementosYOtrosComponent implements OnInit {
 
   constructor() { }
+  // tslint:disable-next-line:no-inferrable-types
+  arre: any = ['0', '1', '2', '3', '4', '5'];
 
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
+  dropdown(){
+
+  }
 }

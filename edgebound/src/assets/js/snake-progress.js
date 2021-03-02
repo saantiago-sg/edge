@@ -8,3 +8,6 @@ function snakeProgress() {
   let scrolled = (winScroll / height) * 100;
   document.querySelector("#bar").style.width = scrolled + "%";
 }
+
+
+

@@ -18,6 +18,16 @@ import { SanitariosYMueblesParaBanoComponent } from './components/categories/san
 import { CalentadoresYTinacosComponent } from './components/categories/calentadores-y-tinacos/calentadores-y-tinacos.component';
 import { ComplementosYOtrosComponent } from './components/categories/complementos-y-otros/complementos-y-otros.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CatalogItemComponent } from './components/catalog-item/catalog-item.component';
+import { ProductComponent } from './components/product/product.component';
+import { CartComponent } from './components/cart/cart.component';
+import { QuienesSomosComponent } from './components/footer-links/quienes-somos/quienes-somos.component';
+import { EnviosComponent } from './components/footer-links/envios/envios.component';
+import { SucursalesComponent } from './components/footer-links/sucursales/sucursales.component';
+import { ContactoComponent } from './components/footer-links/contacto/contacto.component';
+import { FaqComponent } from './components/footer-links/faq/faq.component';
+import { TerminosComponent } from './components/footer-links/terminos/terminos.component';
+import { MayoreoComponent } from './components/footer-links/mayoreo/mayoreo.component';
 
 // pipes
 
@@ -35,7 +45,17 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     SanitariosYMueblesParaBanoComponent,
     CalentadoresYTinacosComponent,
     ComplementosYOtrosComponent,
-    DashboardComponent
+    DashboardComponent,
+    CatalogItemComponent,
+    ProductComponent,
+    CartComponent,
+    QuienesSomosComponent,
+    EnviosComponent,
+    SucursalesComponent,
+    ContactoComponent,
+    FaqComponent,
+    TerminosComponent,
+    MayoreoComponent
   ],
   imports: [
     BrowserModule,

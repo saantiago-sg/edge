@@ -1,0 +1,38 @@
+.about-page {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+}
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.about-content {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.about-content h2 {
+    font-family: "MuseoSans-7";
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about-content p {
+    font-family: "MuseoSans-5";
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 760px){
+.about-content {
+    width: 58%;
+    order: 1;
+}
+.about-image {
+    width: 38%;
+    order: 0;
+}
+
+}
