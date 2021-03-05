@@ -28,6 +28,7 @@ import { ContactoComponent } from './components/footer-links/contacto/contacto.c
 import { FaqComponent } from './components/footer-links/faq/faq.component';
 import { TerminosComponent } from './components/footer-links/terminos/terminos.component';
 import { MayoreoComponent } from './components/footer-links/mayoreo/mayoreo.component';
+import { RecoverComponent } from './components/recover/recover.component';
 
 // pipes
 
@@ -55,7 +56,8 @@ import { MayoreoComponent } from './components/footer-links/mayoreo/mayoreo.comp
     ContactoComponent,
     FaqComponent,
     TerminosComponent,
-    MayoreoComponent
+    MayoreoComponent,
+    RecoverComponent
   ],
   imports: [
     BrowserModule,

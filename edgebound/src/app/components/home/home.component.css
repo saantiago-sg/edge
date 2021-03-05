@@ -1,0 +1,240 @@
+  /* ---- MOBILE ---- */
+.newsletter {
+    width: 100%;
+    background-color: #eee;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  .newsletter-container {
+    max-width: 1260px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  
+  .newsletter-container,
+  .newsletter-form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .newsletter-form {
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .newsletter-form p {
+    width: 100%;
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    padding: 0 2rem .5rem;
+  }
+  
+  .newsletter-form div {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .newsletter-form div label {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  
+  .newsletter-form div label input {
+    font-family: "MuseoSans-3";
+    color: #666;
+    border: none;
+    padding: 1rem 1rem 1rem 3.6rem;
+  }
+  
+  .newsletter-form div label i {
+    position: absolute;
+    font-size: 2rem;
+    top: .6rem;
+    left: 1rem;
+    color: #ccc;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  
+  .newsletter-form div aside,
+  .newsletter-form div button {
+    font-size: 3rem;
+    padding: 0 1rem;
+    line-height: 0;
+    background-color: #fff;
+  }
+  
+  .newsletter-form div button {
+    color: #666;
+  }
+  
+  /* banner-single */
+.banner-single {
+    width: 100%;
+    max-width: 1260px;
+    display: block;
+    margin: auto auto 1rem;
+    line-height: 0;
+  }
+  
+  .banner-single a {
+    width: 100%;
+  }
+
+  
+/* banner youtube */
+.banner-youtube {
+    width: 100%;
+    max-width: 1260px;
+    display: block;
+    padding: 0 1rem;
+    margin: auto auto 3rem;
+  }
+  
+  .banner-youtube-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  
+  .banner-youtube-big-image {
+    width: 100%;
+    margin-bottom: 1rem;
+    line-height: 0;
+  }
+  
+  .banner-youtube aside {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  
+  .banner-youtube-content a {
+    width: 100%;
+  }
+  
+  .banner-youtube-small-image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-youtube-content a {
+    width: 100%;
+  }
+  
+  .banner-youtube-video {
+    width: 100%;
+    position: relative;
+    padding-top: 58%;
+  }
+  
+  .banner-youtube-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .op-0{
+    opacity: 0;
+}  
+
+.slider-item {
+    margin: 0 .5rem;
+}
+.slider-item>div, .slider-item a {
+  min-width: 100%;
+  color: #222;
+  font-size: 1rem;
+  padding: .5rem;
+  border: 1px solid #eee;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.slider-item>div picture, .slider-item a picture {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+.slider-item>div>div, .slider-item a>div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slider-item>div>div b, .slider-item a>div b {
+  font-family: "MuseoSans-3";
+    color: #222;
+    font-size: .8rem;
+    margin-right: 1rem;
+}
+.slider-item>div>p, .slider-item a>p {
+  font-family: "MuseoSans-3";
+  font-size: .8rem;
+  margin: .75rem 0;
+}
+  /* ---- FIN MOBILE ---- */
+
+  /* TABLET */
+@media screen and (min-width: 760px){
+    .newsletter-form {
+        padding: .5rem;
+        flex-flow: row nowrap;
+    }
+    .newsletter-form p {
+        width: 38%;
+        text-align: center;
+        padding: 0;
+    }
+    .newsletter-form div {
+        width: 50%;
+        border: none;
+    }
+}
+/* ---- FIN TABLET ---- */
+
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1024px){
+.op-0{
+    opacity: .4;
+  }
+.banner-youtube {
+    padding: 0;
+}
+.banner-youtube-big-image {
+    width: 49%;
+    margin-bottom: 0;
+}
+.banner-youtube aside {
+    width: 49%;
+    margin-bottom: 0;
+}
+.banner--youtube-small_image {
+    margin-bottom: 0;
+}
+
+}

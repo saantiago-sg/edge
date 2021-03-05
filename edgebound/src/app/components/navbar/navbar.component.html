@@ -1,5 +1,5 @@
 <!-- <p>navbar works!</p> -->
-<header>
+<header class="header-desktop">
   <div id="bar" class="snakke-progress"></div>
 <nav>
   <div class="menu-content">
@@ -20,11 +20,11 @@
         </form>
       </div>
       <div class="menu-links">
-        <a href="">
+        <a routerLink="sucursales">
           <i class="material-icons">location_on</i>
           <p>Localiza tu sucursal</p>
         </a>
-        <a href="">
+        <a routerLink="contacto">
           <i class="material-icons">help</i>
           <p>¿Necesitas ayuda?</p>
         </a>
@@ -348,5 +348,338 @@
        </div> 
     </div>
 </div>
+</header>
+
+
+<!-- ------------- -->
+
+<header class="header-mob">
+  <div id="bar" class="snakke-progress"></div>
+<nav>
+  <div class="menu-content">
+    <div class="menu-content-left">
+      <div class="menu-logo">
+        <button><i class="material-icons ">menu</i></button>
+        <a href="">
+          <img src="/assets/img/logo.svg" alt="Llano de la Torre">
+        </a>
+      </div>
+      <div class="searchbox-mobile"><form class="searchbox-form"><label><input type="search" id="search-bar" placeholder="¿Qué estás buscando?" value=""></label><button><i class="material-icons ">search</i></button><p (click)="closeSearch()"><i class="material-icons ">close</i></p></form><div></div></div>
+    </div>
+
+    <div class="menu-actions">
+      <div class="menu-actions-btn menu-actions-search">
+        <button (click)="searchActive()"><i class="material-icons">search</i></button>
+      </div>
+      <div class="menu-actions-btn menu-actions-user">
+        <a routerLink="dashboard">
+          <i class="material-icons">person</i>
+        </a>
+      </div>
+      <div class="menu-actions-btn menu-actions-cart">
+        <a routerLink="cart">
+          <img src="https://llanodelatorre.com.mx/static/media/icon-cart.13a9e995.svg" alt="cart">
+          <span>0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- <div class="nav-menu">
+    <div class="nav-container">
+       <div class="nav-categories">
+        <div class="dropdown">
+           <a routerLink="category/pisos-y-muros"><button class="dropbtn">Pisos y muros</button></a> 
+                  <div class="dropdown-content pisos-y-muros">
+                      <div class="row pisos-y-muros">
+                        <div class="col-6">
+                    <div>
+                      <a href="#">Pisos</a>
+                      <ul>
+                        <li><a href="">Cerámicos</a></li>
+                        <li><a href="">Porcelanico</a></li>
+                      </ul>
+                    </div>
+
+                    <div>
+                    <a href="#">Muros</a>
+                    <ul>
+                      <li><a href="">Azulejos</a></li>
+                    </ul>
+                    </div>
+
+                    <div>
+                    <a href="#">Vitroblock</a>
+                    </div>
+
+                    <div>
+                    <a href="#">Maderas y Laminados</a>
+                    <ul>
+                      <li><a href="">Laminados</a></li>
+                    </ul>
+                    </div>
+
+                    <div>
+                      <a href="#">Mosaicos venecianos</a>
+                    </div>
+
+                  </div>
+                  <div class="col-6">
+
+                    <div>
+                      <a href="">Complementos</a>
+                      <ul>
+                      <li><a href="">Cortadoras</a></li>
+                      <li><a href="">Limpiadores y más</a></li>
+                    </ul>
+                    </div>
+
+                  </div>
+
+                    
+                  </div>
+            </div>
+      </div>
+
+          <div class="dropdown">
+            <a routerLink="category/adhesivo">  <button class="dropbtn">Adhesivo</button></a>
+            <div class="dropdown-content">
+              <div class="row adhesivos">
+                <div class="col-12">
+
+                  <div>
+                    <a href="#">Adhesivo cerámico</a>
+                    <ul>
+                      <li><a href="">Blanco</a></li>
+                      <li><a href="">Gris</a></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <a href="">Adhesivo porcelanico</a>
+                    <ul>
+                      <li><a href="">Blanco</a></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <a href="">Piso sobre piso</a>
+                  </div>
+
+                  <div>
+                    <a href="">Adhesivos especiales</a>
+                  </div>
+
+                  <div>
+                    <a href="">junta y boquilla</a>
+                  </div>
+
+                  <div class="">
+                    <a href="">Complementos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a routerLink="category/accesorios-para-bano"> <button class="dropbtn">Accesorios para baño</button></a>
+            <div class="dropdown-content">
+              <div class="row accesorios-para-baño">
+                <div class="col-4">
+
+                  <div>
+                    <a href="#">Mezcladoras y manerales</a>
+                    <ul>
+                      <li><a href="">Manerales</a></li>
+                      <li><a href="">Mezcladoras</a></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <a href="">Monomandos</a>
+                  </div>
+
+                  <div>
+                    <a href="">Regaderas</a>
+                  </div>
+
+                  <div>
+                    <a href="">Salidas de tina</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div>
+                    <a href="">Complementos</a>
+                    <ul>
+                      <li><a href="">Barra</a></li>
+                      <li><a href="">Céspol</a></li>
+                      <li><a href="">Contra</a></li>
+                      <li><a href="">Ensamble</a></li>
+                      <li><a href="">Ganchos</a></li>
+                      <li><a href="">Jabonera</a></li>
+                      <li><a href="">Otros</a></li>
+                      <li><a href="">Portacepillos</a></li>
+                      <li><a href="">PortaPapel</a></li>
+                      <li><a href="">Toallero barra</a></li>
+                      <li><a href="">Toallero corto</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div>
+                    <a href="">Institucional</a>
+                    <ul>
+                      <li><a href="">Dispensador de jabón</a></li>
+                      <li><a href="">Fluxómetro</a></li>
+                      <li><a href="">Llaves de sensor</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <a href="">Coladeras</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a routerLink="category/accesorios-para-cocina"> <button class="dropbtn">Accesorios para cocina</button> </a>
+            <div class="dropdown-content">
+              <div class="row accesorios-para-cocina">
+                <div class="col-6">
+                  <div>
+                    <a href="">Mezcladoras y monomandos</a>
+                    <ul>
+                      <li><a href="">Mezcladoras</a></li>
+                      <li><a href="">Monomandos</a></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <a href="">Tarja</a>
+                  </div>
+                  <div>
+                    <a href="">Parrillas</a>
+                  </div>
+                  <div>
+                    <a href="">Campana</a>
+                  </div>
+                  <div>
+                    <a href="">Complementos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a routerLink="category/sanitarios-y-muebles-para-bano"> <button class="dropbtn">Sanitarios y muebles para baño</button> </a> 
+            <div class="dropdown-content">
+             <div class="row sanitaros-y-muebles-para-bano">
+               <div class="col-6">
+                <div>
+                  <a href="">W.C.</a>
+                  <ul>
+                    <li><a href="">Dos piezas</a></li>
+                    <li><a href="">One piece</a></li>
+                    <li><a href="">Suspendidos</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <a href="">Asientos</a>
+                </div>
+                <div>
+                  <a href="">Mingitorios</a>
+                </div>
+                <div>
+                  <a href="">Lavabos</a>
+                </div>
+                <div>
+                  <a href="">Conjuntos</a>
+                </div>
+                <div>
+                  <a href="">Tocadores</a>
+                </div>
+               </div>
+               <div class="col-6">
+                <div>
+                  <a href="">Complementos</a>
+                  <ul>
+                    <li><a href="">Kits de instalación</a></li>
+                    <li><a href="">Pijas y juntas</a></li>
+                  </ul>
+                </div>
+               </div>
+             </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a routerLink="category/calentadores-y-tinacos"> <button class="dropbtn">Calentadores y tinacos</button> </a>
+            <div class="dropdown-content">
+             <div class="row calentadores-y-tinacos">
+               <div class="col-10">
+                 <div>
+                   <a href="">Calentadores</a>
+                   <ul>
+                     <li><a href="">De paso</a></li>
+                     <li><a href="">Deposito</a></li>
+                     <li><a href="">Eléctricos</a></li>
+                     <li><a href="">Instantáneos</a></li>
+                     <li><a href="">Generador de vapor</a></li>
+                   </ul>
+                 </div>
+                 <div>
+                   <a href="">Tinacos</a>
+                 </div>
+                 <div>
+                   <a href="">Complementos</a>
+                   <ul>
+                    <li><a href="">Kits de instalación</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+            </div>
+          </div>
+         
+          <div class="dropdown">
+            <a routerLink="category/complementos-y-otros"> <button class="dropbtn">Complementos y otros</button> </a>
+            <div class="dropdown-content">
+             <div class="row complementos-y-otros">
+               <div class="col-8">
+                <div>
+                  <a href="">Accesorios de plomería</a>
+                </div>
+                <div>
+                  <a href="">Bombas</a>
+                </div>
+                <div>
+                  <a href="">Cisternas</a>
+                </div>
+                <div>
+                  <a href="">Complementos</a>
+                </div>
+                <div>
+                  <a href="">Registros</a>
+                </div>
+                <div>
+                  <a href="">Tanque de estacionario</a>
+                </div>
+                <div>
+                  <a href="">Tuberías</a>
+                </div>
+                <div>
+                  <a href="">Válvulas</a>
+                </div>
+
+               </div>
+             </div>
+            </div>
+          </div>
+
+       </div> 
+    </div>
+</div> -->
 </header>
 

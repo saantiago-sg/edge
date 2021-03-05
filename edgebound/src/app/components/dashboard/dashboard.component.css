@@ -1,0 +1,139 @@
+/* -------- DASHBOARD ------- */
+.login-container {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-block {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .login-switch {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .login-switch button.active {
+    color: #fff;
+    background-color: #222;
+  }
+  .login-switch button:first-child {
+    border-radius: .3rem 0 0 .3rem;
+  }
+  .login-switch button {
+    min-width: 38%;
+    font-size: .85rem;
+    font-weight: 400;
+    color: #666;
+    background-color: #f6f6f6;
+    padding: .5rem;
+    text-align: center;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .login-switch button:last-child {
+    border-radius: 0 .3rem .3rem 0;
+  }
+  .login-component {
+    display: inline-block;
+    padding: 1rem;
+  }
+  .login-form {
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: .8rem;
+    padding: 1.5rem 1rem;
+  }
+  .login-form, .login-password {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .input-global {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 1rem 0;
+  }
+  .input-global span {
+    color: #666;
+    position: absolute;
+    left: 0;
+    top: -1.25rem;
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  .input-global input, .input-global select {
+    padding: .75rem;
+  }
+  input[type=email] {
+    text-transform: lowercase;
+  }
+  input:active, input:focus, select:active, select:focus, textarea:active, textarea:focus {
+    border-color: #00a3b0;
+  }
+  .login-password {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .login-password a {
+    color: #00a3b0;
+    font-size: .8rem;
+  }
+  .login-password div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .login-password-rules {
+    font-family: "MuseoSans-5";
+    width: 100%;
+    padding: 1rem 0;
+    font-size: .85rem;
+    color: #666;
+}
+  .login-password div i {
+    font-size: 1rem;
+    margin-right: .25rem;
+  }
+  .login-password div span {
+    font-family: "MuseoSans-5";
+    font-size: .8rem;
+  }
+  .login-submit{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .login-submit button {
+    width: 100%;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: #222;
+    border-radius: .3rem;
+  }
+  .login-submit button:active, .login-submit button:focus, .login-submit button:hover {
+    background-color: #00a3b0;
+  }
+
+  @media screen and (min-width: 760px){
+.login-block {
+    width: 50%;
+}
+  }
+
+  @media screen and (min-width: 1024px){
+.login-block {
+    width: 33%;
+}
+}

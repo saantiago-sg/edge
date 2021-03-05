@@ -17,11 +17,14 @@ import { ContactoComponent } from './components/footer-links/contacto/contacto.c
 import { FaqComponent } from './components/footer-links/faq/faq.component';
 import { TerminosComponent } from './components/footer-links/terminos/terminos.component';
 import { MayoreoComponent } from './components/footer-links/mayoreo/mayoreo.component';
+import { RecoverComponent } from './components/recover/recover.component';
+
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'cart', component: CartComponent },
     { path: 'dashboard', component: DashboardComponent },
+    { path: 'recover', component: RecoverComponent },
     { path: 'quienes-somos', component: QuienesSomosComponent },
     { path: 'envios', component: EnviosComponent },
     { path: 'sucursales', component: SucursalesComponent },

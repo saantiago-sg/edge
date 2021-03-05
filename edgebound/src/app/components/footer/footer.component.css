@@ -1,0 +1,318 @@
+/* MOBILE */
+.layout-footer {
+    font-family: "MuseoSans-3";
+    width: 100%;
+    display: block;
+    background-color: #222;
+    color: #fff;
+    /* height: 70vh; */
+  }
+
+  .layout-footer-container {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+    padding: 1rem 1rem 3.5rem;
+    /* height: 600.188px; */
+}
+
+.layout-footer-main {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 528.188px; */
+}
+.layout-footer-logo {
+    display: inline-block;
+    width: 30%;
+}
+.layout-footer-links {
+    width: 100%;
+    display: block;
+    margin: 1.5rem 0 1rem;
+    /* height: 155px; */
+}
+.layout-footer-links ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0;
+    padding: 0;
+    /* height: 155px; */
+}
+.layout-footer-links ul li a {
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+    padding: .5rem;
+    height: 15px;
+}
+.layout-footer-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.layout-footer-social a {
+    margin: .5rem 0 .5rem .5rem;
+    width: 2rem;
+}
+.layout-footer-contact {
+    font-family: "MuseoSans-7";
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem 0;
+    height: 54px;
+}
+.layout-footer-contact i {
+    color: #999;
+    -webkit-transform: rotate(
+45deg
+);
+    transform: rotate(
+45deg
+);
+}
+.layout-footer-contact>p {
+    font-family: "MuseoSans-3";
+    display: inline-block;
+    color: #999;
+    font-weight: 300;
+    margin-right: .5rem;
+}
+.layout-footer-contact div {
+    height: 54px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.layout-footer-contact div a, .layout-footer-contact div p {
+    color: #fff;
+    font-weight: 400;
+    margin-right: 0;
+    margin-bottom: .5rem;
+    height: 19px;
+}
+.layout-footer-secure {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* height: 196.172px; */
+}
+.layout-footer-cards {
+    width: 100%;
+    text-align: center;
+    padding: 1rem .5rem;
+    border-bottom: .5px solid #666;
+    margin-bottom: .75rem;
+}
+.layout-footer-cards div:first-child {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #666;
+    padding-bottom: .5rem;
+}
+.layout-footer-cards div p {
+    display: inline-block;
+    font-weight: 300;
+}
+.layout-footer-cards div i {
+    margin-right: 6px;
+    color: #00a3b0;
+}
+.layout-footer-cards div:last-child {
+    width: 100%;
+}
+.layout-footer-copyright {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    font-weight: 300;
+    color: #ccc;
+    height: 36px;
+}
+.layout-footer-copyright p {
+    display: block;
+    margin-bottom: .5rem;
+    height: 14px;
+}
+.layout-footer-copyright a {
+    height: 14px;
+    color: #ccc;
+}
+.layout-footer-side {
+    display: inline-block;
+    text-align: right;
+}
+
+
+
+.layout-footer-tb {
+    display: none;
+    font-family: "MuseoSans-3";
+    width: 100%;
+    background-color: red;
+    color: #fff;
+  }
+  .layout-footer-desktop {
+    display: none;
+    font-family: "MuseoSans-3";
+    width: 100%;
+    background-color: green;
+    color: #fff;
+  }
+
+  /* ---- FIN MOBILE ---- */
+
+
+  /* TABLET */
+@media screen and (min-width: 760px){
+    .layout-footer-tb {
+        font-family: "MuseoSans-3";
+        width: 100%;
+        display: block;
+        background-color: #222;
+        color: #fff;
+      }
+    .layout-footer {
+        display: none;
+        font-family: "MuseoSans-3";
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+      }
+    .layout-footer-container {
+        padding-bottom: 1rem;
+    }
+    .layout-footer-logo {
+        width: 24%;
+    }
+    .layout-footer-links {
+        margin: 0;
+        width: 72%;
+    }
+    .layout-footer-side {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding-top: .25rem;
+        margin: .5rem 0;
+        border-top: 1px solid #666;
+    }
+    .layout-footer-links ul {
+        grid-template-columns: repeat(3,1fr);
+       
+    }
+    .layout-footer-contact {
+        width: auto;
+        justify-content: flex-end;
+    }
+    .layout-footer-cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-top: .5px solid #666;
+    }
+    .layout-footer-cards div:first-child {
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .layout-footer-cards div:last-child {
+        width: 70%;
+    }
+    .layout-footer-copyright {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .layout-footer-copyright p {
+        margin-bottom: 0;
+        padding: .25rem;
+    }
+    .layout-footer-copyright a {
+        padding: .25rem;
+    }
+    .layout-footer-desktop {
+        display: none;
+        font-family: "MuseoSans-3";
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+      }
+}
+/* ---- FIN TABLET ---- */
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1024px){
+    .layout-footer-desktop {
+        display: block;
+        font-family: "MuseoSans-3";
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+      }
+    .layout-footer-tb {
+        display: none;
+        font-family: "MuseoSans-3";
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+      }
+      .layout-footer {
+        display: none;
+        font-family: "MuseoSans-3";
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+      }
+    
+    .layout-footer-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .layout-footer-main {
+        width: 80%;
+    }
+    .layout-footer-logo {
+        width: 21%;
+        margin-bottom: 1rem;
+    }
+    .layout-footer-links {
+        margin: 1rem 0;
+        width: 74%;
+    }
+    .layout-footer-secure {
+        justify-content: space-between;
+    }
+    .layout-footer-side {
+        width: 20%;
+        display: inline-block;
+        text-align: right;
+        margin: 0;
+        border-top: none;
+    }
+}

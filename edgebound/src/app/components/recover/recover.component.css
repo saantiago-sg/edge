@@ -1,0 +1,80 @@
+main {
+    min-height: 80vh;
+    -webkit-animation: fadeIn .3s linear;
+    animation: fadeIn .3s linear;
+}
+.reset-container {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+    padding: 1rem;
+}
+.reset-container h3 {
+    font-family: "MuseoSans-3";
+    width: 100%;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.reset-form {
+    width: 90%;
+    margin: 1rem auto;
+}
+.reset-form div {
+    margin: 1rem 0;
+}
+.input-global {
+    font-family: "MuseoSans-3";
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 1rem 0;
+}
+.input-global span {
+    font-family: "MuseoSans-5";
+    color: #666;
+    position: absolute;
+    left: 0;
+    top: -1.25rem;
+    font-size: .8rem;
+    font-weight: 400;
+}
+.input-global input, .input-global select {
+    padding: .75rem;
+}
+input[type=email] {
+    text-transform: lowercase;
+}
+.reset-form div p {
+    font-family: "MuseoSans-5";
+    font-size: .9rem;
+    color: #666;
+}
+.reset-form div button {
+    font-family: "MuseoSans-5";
+    width: 100%;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: #222;
+    border-radius: .3rem;
+    margin: 1rem 0;
+}
+.reset-form div button:hover {
+    background-color: #00a3b0;
+}
+
+@media screen and (min-width: 760px){
+.reset-form {
+    width: 40%;
+}
+}
+
+
+@media screen and (min-width: 1024px){
+.reset-form {
+    width: 30%;
+}
+}

@@ -1,274 +1,413 @@
+<!-- oculto en pantalla mas chicas que lg -->
 <main>
-    <div class="breadcrumb">
-        <div class="breadcrumb-path">
-            <a href="">
-                <span>Tienda</span>
-                <i class="material-icons">chevron_right</i>
-            </a>
-            <a href="">
-                <span>Home</span>
+  <div class="breadcrumb">
+    <div class="breadcrumb-path">
+      <a href="">
+        <span>Tienda</span>
+        <i class="material-icons">chevron_right</i>
+      </a>
+      <a href="">
+        <span>Home</span>
 
-            </a>
-        </div>
-        <div class="breadcrumb-espot">
-            <a href="">
-                <i class="material-icons">local_shipping</i>
-                <span>Envío gratis desde $900 MXN en CDMX y Zona Metropolitana</span>
-            </a>
-        </div>
+      </a>
     </div>
+    <div class="breadcrumb-espot">
+      <a href="">
+        <i class="material-icons">local_shipping</i>
+        <span>Envío gratis desde $900 MXN en CDMX y Zona Metropolitana</span>
+      </a>
+    </div>
+  </div>
 
-    <!-- CAROUSEL PRINCIPAL -->
-    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="12000">
-            <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/francoli_1300x400.gif" class="d-block w-100" alt="imagen principal">
-          </div>
-          <div class="carousel-item" data-bs-interval="12000">
-            <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/HomeWelcome_renueva_1300x400.png" class="d-block w-100" alt="imagen principal2">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal"  data-bs-slide="prev">
-          <span class="material-icons ico-left" aria-hidden="true">chevron_left</span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal"  data-bs-slide="next">
-          <span class="material-icons ico-right" aria-hidden="true">chevron_right</span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="carousel-indicators">
-          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></li>
-          <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+  <!-- CAROUSEL PRINCIPAL -->
+  <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="12000">
+        <picture>
+          <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/francoli_1300x400.gif"
+            media="(min-width: 1025px)">
+          <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/francoli_800x400.gif"
+            media="(min-width: 760px)">
+          <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/francoli_500x500.gif"
+            media="(min-width: 0px)">
+          <img class="d-block w-100"
+            src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/francoli_500x500.gif" alt="">
+        </picture>
       </div>
+      <div class="carousel-item" data-bs-interval="12000">
+        <picture>
+          <source
+            srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/HomeWelcome_renueva_1300x400.png"
+            media="(min-width: 1025px)">
+          <source
+            srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/HomeWelcome_renueva_800x400.png"
+            media="(min-width: 760px)">
+          <source
+            srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/HomeWelcome_renueva_500x500.png"
+            media="(min-width: 0px)">
+          <img class="d-block w-100"
+            src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-welcome-slider/HomeWelcome_renueva_500x500.png"
+            alt="">
+        </picture>
       </div>
+    </div>
+    <button class="carousel-control-prev op-0" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+      <span class="material-icons ico-left" aria-hidden="true">chevron_left</span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next op-0" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+      <span class="material-icons ico-right" aria-hidden="true">chevron_right</span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="carousel-indicators">
+      <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true"></li>
+      <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    </div>
+  </div>
 
-      <!-- CAROUSEL DE OFERTAS -->
-      <div id="carouselExample" class="carousel slide carousel-promo" data-bs-ride="carousel">
-        <div class="carousel-inner-acomodado-p-uno">
-          <div class="carousel-item active" data-bs-interval="15000">
-            <div class="row efect-promo">
-            <div class="col-4">
-              <a href="">
-                <img class="img-promo adjust-img-left" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/american_400x400.png" alt="">
-              </a>
-            </div>
-            <div class="col-4">
-              <a href="">
-                <img class="img-promo" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/tekaway_400x400.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-4">
-              <a href="">
-                <img class="img-promo adjust-img-right" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/urrea_400x400.png" alt="">
-              </a>
-            </div>
-          </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="15000">
-            <div class="row">
-              <div class="col-4">
-                <a href="">
-                  <img class="img-promo adjust-img-left" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/urrea_400x400.png" alt="">
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="">
-                  <img class="img-promo" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/400x400_CUATRO.jpg" alt="">
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="">
-                  <img class="img-promo adjust-img-right" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/400x400_CINCO.jpg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"  data-bs-slide="prev">
-          <span class="material-icons ico-left" aria-hidden="true">chevron_left</span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"  data-bs-slide="next">
-          <span class="material-icons ico-right" aria-hidden="true">chevron_right</span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        
-      </div>
-      
-      <!-- BANNER GRANDE Y VIDEO DE YOUTUBE -->
-      <div class="banner-youtube">
-        <div class="banner-youtube-content">
-          <div class="banner-youtube-big-image">
-            <a href="" target="_blank">
-              <picture>
-                <img class="lazyloaded" data-src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-500x260.jpg" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-800x1000.jpg" alt="">
-              </picture>
+  <!-- CAROUSEL DE OFERTAS -->
+  <div id="carouselExample" class="carousel slide carousel-promo" data-bs-ride="carousel">
+    <div class="carousel-inner-acomodado-p-uno">
+      <div class="carousel-item active" data-bs-interval="15000">
+        <div class="row efect-promo">
+          <div class="col-4">
+            <a href="">
+              <img class="img-promo adjust-img-left"
+                src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/american_400x400.png" alt="">
             </a>
           </div>
-          <aside>
-            <div class="banner-youtube-small-image">
-              <a href="" target="_blank">
-                <picture>
-                  <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-800x500.jpg" alt="remodela">
-                </picture>
-              </a>
-            </div>
-            <div class="banner-youtube-video">
-              <div class="banner-youtube-video-player">
-                <div style="width: 100%; height: 100%;">
-                  <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/lH7A1QtQBNo?autoplay=0&amp;mute=0&amp;controls=0&amp;origin=https%3A%2F%2Fllanodelatorre.com.mx&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1" id="widget2"></iframe>
-                </div>
-              </div>
-            </div>
-          </aside>
+          <div class="col-4">
+            <a href="">
+              <img class="img-promo"
+                src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/tekaway_400x400.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="">
+              <img class="img-promo adjust-img-right"
+                src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/urrea_400x400.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
-
-      <!-- promos 2 -->
-      <div id="carouselPromos" class="carousel slide carousel-promo" data-bs-ride="carousel">
-        <div class="carousel-inner-acomodado-p-dos">
-
-          <div class="carousel-item active" data-bs-interval="15000">
-            <div class="row efect-promo">
-
-            <div class="col-3">
-                <div class="card">
-                  <a href="">
-                    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.jpg" class="card-img-top" alt="AZULEJO ETANA 20X30 HUESO 1.52 1A">
-                  </a>
-                  <div class="card-body">
-                    <b class="card-title">$180.46</b>
-                    <p class="card-text">AZULEJO ETANA 20X30 HUESO 1.52 1A</p>
-                  </div>
-                </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <a href="">
-                  <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jpg" class="card-img-top" alt="6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO">
-                </a>
-                <div class="card-body">
-                  <b class="card-title">$770.63</b>
-                  <p class="card-text">6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <a href="">
-                  <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.2085/444.2085_1_400x400.jpg" class="card-img-top" alt="1660604MX.002 REGADERA FLUENT CROMO">
-                </a>
-                <div class="card-body">
-                  <b class="card-title">$1,612.03</b>
-                  <p class="card-text">1660604MX.002 REGADERA FLUENT CROMO</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <a href="">
-                  <img src="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jpg" class="card-img-top" alt="FREGADERO 8821022 (08131022) 1C 2PERF. 381.381">
-                </a>
-                <div class="card-body">
-                  <b class="card-title">$771.38</b>
-                  <p class="card-text">FREGADERO 8821022 (08131022) 1C 2PERF. 381.381</p>
-                </div>
-              </div>
-            </div>
-
+      <div class="carousel-item" data-bs-interval="15000">
+        <div class="row">
+          <div class="col-4">
+            <a href="">
+              <img class="img-promo adjust-img-left"
+                src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/urrea_400x400.png" alt="">
+            </a>
           </div>
+          <div class="col-4">
+            <a href="">
+              <img class="img-promo"
+                src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/400x400_CUATRO.jpg" alt="">
+            </a>
           </div>
-
-          <div class="carousel-item" data-bs-interval="15000">
-            <div class="row efect-promo">
-
-            <div class="col-3">
-                <div class="card">
-                  <a href="">
-                    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.jpg" class="card-img-top" alt="JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE  ">
-                  </a>
-                  <div class="card-body">
-                    <b class="card-title">$6,372.45</b>
-                    <p class="card-text">JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE</p>
-                  </div>
-                </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <a href="">
-                  <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jpg" class="card-img-top" alt="6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO">
-                </a>
-                <div class="card-body">
-                  <b class="card-title">$770.63</b>
-                  <p class="card-text">6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <a href="">
-                  <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.2085/444.2085_1_400x400.jpg" class="card-img-top" alt="1660604MX.002 REGADERA FLUENT CROMO">
-                </a>
-                <div class="card-body">
-                  <b class="card-title">$1,612.03</b>
-                  <p class="card-text">1660604MX.002 REGADERA FLUENT CROMO</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <a href="">
-                  <img src="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jpg" class="card-img-top" alt="FREGADERO 8821022 (08131022) 1C 2PERF. 381.381">
-                </a>
-                <div class="card-body">
-                  <b class="card-title">$771.38</b>
-                  <p class="card-text">FREGADERO 8821022 (08131022) 1C 2PERF. 381.381</p>
-                </div>
-              </div>
-            </div>
-
+          <div class="col-4">
+            <a href="">
+              <img class="img-promo adjust-img-right"
+                src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/400x400_CINCO.jpg" alt="">
+            </a>
           </div>
-          </div>
-
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromos"  data-bs-slide="prev">
-          <span class="material-icons ico-left" aria-hidden="true">chevron_left</span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPromos"  data-bs-slide="next">
-          <span class="material-icons ico-right" aria-hidden="true">chevron_right</span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
       </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="material-icons ico-left" aria-hidden="true">chevron_left</span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="material-icons ico-right" aria-hidden="true">chevron_right</span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel mob tablet de ofertas 1 -->
+<div class="carousel carousel-promo-mob" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+  <div class="carousel-cell">
+    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/american_400x400.png"
+        alt="">
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/tekaway_400x400.jpg"
+        alt="">
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/urrea_400x400.png"
+        alt="">
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/urrea_400x400.png"
+    alt="">
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-promo-slider/400x400_CUATRO.jpg"
+    alt="">
+  </div>
+</div>
 
-      <!-- BANNER -->
-      <div class="banner-single">
-        <a href="">
+  <!-- BANNER GRANDE Y VIDEO DE YOUTUBE -->
+  <div class="banner-youtube">
+    <div class="banner-youtube-content">
+      <div class="banner-youtube-big-image">
+        <a href="" target="_blank">
           <picture>
-            <img data-src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_500x300.png" alt="seo title for image" class=" lazyloaded" src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_1300x300.jpg">
+            <source
+              data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-800x1000.jpg"
+              media="(min-width: 1025px)"
+              srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-800x1000.jpg">
+            <source
+              data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-800x300.jpg"
+              media="(min-width: 760px)"
+              srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-800x300.jpg">
+            <source
+              data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-500x260.jpg"
+              media="(min-width: 0px)"
+              srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-500x260.jpg">
+            <img data-src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-500x260.jpg"
+              alt="seo title for image" class="lazyloaded"
+              src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/AR-500x260.jpg">
           </picture>
         </a>
       </div>
-
-      <!-- INPUT DE MENSAJE -->
-      <div class="newsletter">
-        <div class="newsletter-container">
-          <form class="newsletter-form">
-            <p>¡Recibe noticias sobre promociones especiales!</p>
-            <div>
-              <label>
-                <input type="email" placeholder="correo electrónico" value="">
-                <i class="material-icons-outlined">email</i>
-              </label>
-              <button>
-                <i class="material-icons">send</i>
-              </button>
+      <aside>
+        <div class="banner-youtube-small-image">
+          <a href="" target="_blank">
+            <picture>
+              <source
+                data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-800x500.jpg"
+                media="(min-width: 1025px)"
+                srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-800x500.jpg">
+              <source
+                data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-800x300.jpg"
+                media="(min-width: 760px)"
+                srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-800x300.jpg">
+              <source
+                data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-500x220.jpg"
+                media="(min-width: 0px)"
+                srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-500x220.jpg">
+              <img data-src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-500x220.jpg"
+                alt="seo title for image" class="lazyloaded"
+                src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-banners-youtube/MS-500x220.jpg">
+            </picture>
+          </a>
+        </div>
+        <div class="banner-youtube-video">
+          <div class="banner-youtube-video-player">
+            <div style="width: 100%; height: 100%;">
+              <iframe frameborder="0" allowfullscreen="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                title="YouTube video player" width="100%" height="100%"
+                src="https://www.youtube.com/embed/lH7A1QtQBNo?autoplay=0&amp;mute=0&amp;controls=0&amp;origin=https%3A%2F%2Fllanodelatorre.com.mx&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1"
+                id="widget2"></iframe>
             </div>
-          </form>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- promos 2 -->
+  <div id="carouselPromos" class="carousel slide carousel-promo" data-bs-ride="carousel">
+    <div class="carousel-inner-acomodado-p-dos">
+
+      <div class="carousel-item active" data-bs-interval="15000">
+        <div class="row efect-promo">
+
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.jpg" class="card-img-top"
+                  alt="AZULEJO ETANA 20X30 HUESO 1.52 1A">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$180.46</b>
+                <p class="card-text">AZULEJO ETANA 20X30 HUESO 1.52 1A</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jpg" class="card-img-top"
+                  alt="6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$770.63</b>
+                <p class="card-text">6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.2085/444.2085_1_400x400.jpg"
+                  class="card-img-top" alt="1660604MX.002 REGADERA FLUENT CROMO">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$1,612.03</b>
+                <p class="card-text">1660604MX.002 REGADERA FLUENT CROMO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jpg" class="card-img-top"
+                  alt="FREGADERO 8821022 (08131022) 1C 2PERF. 381.381">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$771.38</b>
+                <p class="card-text">FREGADERO 8821022 (08131022) 1C 2PERF. 381.381</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
-     
+      <div class="carousel-item" data-bs-interval="15000">
+        <div class="row efect-promo">
+
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.jpg" class="card-img-top"
+                  alt="JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE  ">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$6,372.45</b>
+                <p class="card-text">JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jpg" class="card-img-top"
+                  alt="6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$770.63</b>
+                <p class="card-text">6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.2085/444.2085_1_400x400.jpg"
+                  class="card-img-top" alt="1660604MX.002 REGADERA FLUENT CROMO">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$1,612.03</b>
+                <p class="card-text">1660604MX.002 REGADERA FLUENT CROMO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <a href="">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jpg" class="card-img-top"
+                  alt="FREGADERO 8821022 (08131022) 1C 2PERF. 381.381">
+              </a>
+              <div class="card-body">
+                <b class="card-title">$771.38</b>
+                <p class="card-text">FREGADERO 8821022 (08131022) 1C 2PERF. 381.381</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromos" data-bs-slide="prev">
+      <span class="material-icons ico-left" aria-hidden="true">chevron_left</span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselPromos" data-bs-slide="next">
+      <span class="material-icons ico-right" aria-hidden="true">chevron_right</span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+  <!-- promos 2 mob-tab -->
+  <div class="carousel carousel-promo-mob" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+    <div class="carousel-cell">
+      <div>
+        <div class="slider-item">
+          <div>
+            <picture>
+              <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.webp" type="image/webp">
+              <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jp2" type="image/jp2">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jpg" alt="FREGADERO 8821022 (08131022) 1C 2PERF. 381.381"></picture>
+            <div><b class="">$771.38</b></div>
+            <p>FREGADERO 8821022 (08131022) 1C 2PERF. 381.381</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div><div class="slider-item"><div><picture><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.webp" type="image/webp"><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jp2" type="image/jp2"><img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jpg" alt="6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO"></picture><div><b class="">$770.63</b></div><p>6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO</p></div></div></div>
+    </div>
+    <div class="carousel-cell">
+      <div><div class="slider-item"><div><picture><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.webp" type="image/webp"><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.jp2" type="image/jp2"><img src="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.jpg" alt="JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE"></picture><div><b class="">$6,372.45</b></div><p>JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE</p></div></div></div>
+    </div>
+    <div class="carousel-cell">
+      <div><div class="slider-item"><div><picture><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.webp" type="image/webp"><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.jp2" type="image/jp2"><img src="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.jpg" alt="AZULEJO ETANA 20X30 HUESO 1.52 1A"></picture><div><b class="">$180.46</b></div><p>6070023MX AZULEJO ETANA 20X30 HUESO 1.52 1A</p></div></div></div>
+    </div>
+    <div class="carousel-cell">
+      <div><div class="slider-item"><div><picture><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/444.2085/444.2085_1_400x400.webp" type="image/webp"><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/444.2085/444.2085_1_400x400.jp2" type="image/jp2"><img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.2085/444.2085_1_400x400.jpg" alt="1660604MX.002 REGADERA FLUENT CROMO"></picture><div><b class="">$1,612.03</b></div><p>1660604MX.002 REGADERA FLUENT CROMO</p></div></div></div>
+    </div>
+  </div>
+
+
+  <!-- BANNER -->
+  <div class="banner-single">
+    <a href="">
+      <picture>
+        <source
+          data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_1300x300.jpg"
+          media="(min-width: 1024px)"
+          srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_1300x300.jpg">
+        <source
+          data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_800x300.jpg"
+          media="(min-width: 760px)"
+          srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_800x300.jpg">
+        <source
+          data-srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_500x300.png"
+          media="(min-width: 0px)"
+          srcset="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_500x300.png">
+        <img data-src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_500x300.png"
+          alt="seo title for image" class=" lazyloaded"
+          src="https://s3.amazonaws.com/llanomx.wcaas.media/espots/home-single-banner/HomeSingle_500x300.png">
+      </picture>
+    </a>
+  </div>
+
+  <!-- INPUT DE MENSAJE -->
+  <div class="newsletter">
+    <div class="newsletter-container">
+      <form class="newsletter-form">
+        <p>¡Recibe noticias sobre promociones especiales!</p>
+        <div>
+          <label>
+            <input type="email" placeholder="correo electrónico" value="">
+            <i class="material-icons-outlined">email</i>
+          </label>
+          <button>
+            <i class="material-icons">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
 </main>
+
+

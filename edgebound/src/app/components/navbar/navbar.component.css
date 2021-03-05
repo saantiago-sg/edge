@@ -1,0 +1,107 @@
+.menu-logo button {
+    margin-right: .75rem;
+    padding: .5rem;
+    background-color: transparent;
+}
+.menu-actions button {
+    background-color: transparent;
+}
+.menu-actions-search{
+    height: 48px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.menu-actions-cart{
+    height: 42px;
+}
+.menu-logo{
+    height: 44px;
+}
+.menu-logo button{
+    height: 44px;
+}
+
+.header-desktop{
+    display: none;
+}
+.header-mob{
+    display: block;
+}
+
+.searchbox-mobile {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    z-index: 1;
+    display: block;
+    visibility: hidden;
+    overflow: scroll;
+}
+.searchbox-active {
+    display: block;
+    min-height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.searchbox-form {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+}
+.searchbox-form label {
+    width: 100%;
+}
+.searchbox-form label input {
+    font-family: "MuseoSans-3";
+    border: none;
+    background-color: #eee;
+    color: #666;
+    font-weight: 300;
+}
+.searchbox-form button {
+    padding: .5rem;
+    background-color: #eee;
+    line-height: 0;
+}
+.searchbox-form p {
+    display: inline-block;
+    padding: .64rem .25rem;
+    background-color: #fff;
+}
+.searchbox-form p i {
+    color: #222;
+    font-size: 2rem;
+    vertical-align: text-bottom;
+}
+@media screen and (min-width: 760px){
+    .header-mob{
+        display: block;
+    }
+    .header-desktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header-mob{
+        display: none;
+    }
+    .header-desktop{
+        display: block;
+    }
+}

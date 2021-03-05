@@ -19,10 +19,10 @@
         </div>
         <div class="login-block">
             <div class="login-switch">
-                <button class="active">ENTRAR</button>
-                <button>CREAR CUENTA</button>
+                <button class="active" id="btnLogin" (click)="showLogin()">ENTRAR</button>
+                <button id="btnSignUp" (click)="showSignUp()">CREAR CUENTA</button>
             </div>
-            <div class="login-component">
+            <div *ngIf="!mostrar" class="login-component">
                 <form class="login-form">
                     <label class="input-global">
                         <span>Email *</span>
@@ -37,13 +37,15 @@
                             <i class="material-icons">visibility_off</i>
                             <span>ocultar</span>
                         </div>
-                        <a href="">olvidé mi contraseña</a>
+                        <a routerLink="/recover">olvidé mi contraseña</a>
                     </div>
                     <div class="login-submit">
                         <button type="submit">ENTRAR</button>
                     </div>
                 </form>
-            </div>
+            </div>  
+
+            <div class="login-component" *ngIf="mostrar"><form class="login-form"><label class="input-global "><span>Email *</span><input type="email" placeholder="email" maxlength="44" minlength="9" value=""></label><label class="input-global "><span>Contraseña *</span><input type="password" placeholder="contraseña" value=""></label><label class="input-global "><span>Confirmar contraseña *</span><input type="password" placeholder="confirmar contraseña" value=""></label><div class="login-password"><div><i class="material-icons ">visibility_off</i><span>ocultar contraseña</span></div><div class="login-password-rules">Tu contraseña debe contener un mínimo de 9 caracteres con al menos un número y un caracter especial (+,_,-,@,$,&amp;).</div></div><div class="login-submit"><button type="submit">ENTRAR</button></div></form></div>
         </div>
     </section>
 
