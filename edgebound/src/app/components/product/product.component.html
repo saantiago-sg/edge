@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <main>
     <div class="breadcrumb">
         <div class="breadcrumb-path">
@@ -26,7 +27,7 @@
     </div>
 
     <div class="product-container">
-        <div class="product-images">
+        <!-- <div class="product-images">
             <div class="row m-0 w-75">
             <div class="col-2 mt-3 p-0">
                 <ul class="slick-dots" style="display: block; position: relative;">
@@ -118,7 +119,7 @@
                 </div>
 
                 <div class="product-add-to-cart-button">
-                    <button>Agregar al carrito</button>
+                    <button (click)="addCart()">Agregar al carrito</button>
                 </div>
             </div>
             <div class="product-calculator">
@@ -156,6 +157,131 @@
                 <button aria-label="twitter" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
                     <img src="assets/img/share-twitter.svg" alt="Twitter" via="@llanodelatorre">
                 </button>
+            </div>
+        </div> -->
+        <div class="product-mobile-title">
+            <h2>LOSETA MADERA DABA 20X90 IVORY 1.62 1A</h2>
+            <div class="product-favorite product-favorite-guest">
+                <a routerLink="/dashboard"><span>Agregar a favoritos</span><i class="material-icons color-black">favorite_border</i></a>
+                <div>
+                    <span></span>
+                    <p>Regístrate para crear tu lista de favoritos</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-images">
+            <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="12000">
+                    <picture>
+                      <div id="zoom-img"></div>
+                        <img class="img-zoom-mob" src="https://s3.amazonaws.com/llanomx.wcaas.media/1.152/1.152_1_1000x1000.jpg" alt="LOSETA MADERA DABA 20X90 IVORY 1.62 1A" style="width: 100%;">
+                    </picture>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="12000">
+                    <picture>
+                      <div id="zoom-img-two"></div>
+                      <img class="img-zoom-mob" src="https://s3.amazonaws.com/llanomx.wcaas.media/1.152/1.152_2_1000x1000.jpg" alt="LOSETA MADERA DABA 20X90 IVORY 1.62 1A" style="width: 100%;">
+                    </picture>
+                  </div>
+                </div>
+                <button class="carousel-control-prev op-0" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+                  <span class="material-icons ico-left" aria-hidden="true">chevron_left</span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next op-0" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+                  <span class="material-icons ico-right" aria-hidden="true">chevron_right</span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                  <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true"></li>
+                  <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                </div>
+              </div>
+        </div>
+        <div class="product-info">
+          <div class="product-info-price product-info-price_mobile">
+            <p>$483.71</p>
+          </div>
+          <h2>LOSETA MADERA DABA 20X90 IVORY 1.62 1A</h2>
+          <div class="product-info-price product-info-price-desktop">
+            <div class="product-info-price-desktop-container">
+              <div>
+                <p>$483.71</p>
+              </div>
+            </div>
+              <div class="product-favorite product-favorite-guest">
+                <a href="/dashboard">
+                  <span>Agregar a favoritos</span>
+                  <i class="material-icons color--black">favorite_border</i></a>
+                  <div>
+                    <span></span><p>Regístrate para crear tu lista de favoritos</p>
+                  </div>
+                </div>
+              </div>
+
+          <div>
+            <div class="product-options product-options-text">
+              <div>
+                <label><input type="radio" name="def-capacidad-tamano" checked=""><span>20 X 90 cm</span></label>
+              </div>
+            </div>
+            <div class="product-options product-options-text">
+              <p>Color: Ivory</p>
+              <div class="product-options-color_sample bg-ivory">
+
+              </div>
+            </div>
+          </div>
+          <div class="product-add-to-cart">
+            <div class="product-add-to-cart-combo">
+              <button><i class="material-icons ">remove</i></button>
+              <p>1</p><button><i class="material-icons ">add</i></button>
+            </div>
+            <div class="product-add-to-cart-button">
+              <button (click)="addCart()">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="product-calculator">
+            <div class="product-calculator-header">
+              <h4>¿Cuantas cajas necesito comprar?</h4><p>Ingresa la cantidad de metros cuadrados (m2) de tu espacio.</p>
+            </div>
+              <div class="product-calculator-form">
+                <label>
+                  <input type="text" placeholder="Metros cuadrados">
+                </label>
+                <div>
+                  <button (click)="calcular()">Calcular</button>
+                </div>
+              </div>
+              <div class="product-calculator-result">
+                Necesitas 
+                <b>13 cajas</b>
+                 para 20 metros cuadrados.
+              </div>
+              <div class="product-calculator-copy">
+                <p>* Se recomienda anexar 10 % mas de m2 de piso a instalar por el tema de cortes que se requieran junto a los muros o puertas.</p>
+                <p>* Este cálculo no incluye lo requerido para el zoclo.</p>
+              </div>
+            </div>
+            <div class="product-social">
+              <p>Compartir</p>
+              <button aria-label="whatsapp" class="react-share__ShareButton" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
+                <img src="assets/img/share-whatsapp.svg" alt="Whatsapp">
+              </button>
+              <button aria-label="facebookmessenger" class="react-share__ShareButton" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
+                <img src="assets/img/share-messenger.svg" alt="Messenger">
+              </button>
+              <button aria-label="telegram" class="react-share__ShareButton" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
+                <img src="assets/img/share-telegram.svg" alt="Telegram">
+              </button>
+              <button aria-label="facebook" class="react-share__ShareButton" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
+                <img src="assets/img/share-facebook.svg" alt="facebook">
+              </button>
+              <button aria-label="twitter" class="react-share__ShareButton" style="background-color: transparent; border: none; padding: 0px; font: inherit; color: inherit; cursor: pointer;">
+                <img src="assets/img/share-twitter.svg" alt="Twitter" via="@llanodelatorre">
+              </button>
             </div>
         </div>
         <div class="product-specs">
@@ -244,7 +370,28 @@
                 </div>
             </div>
         </div>
+        <div class="product-added_to_cart">
+          <p>Se agregó a tu carrito:</p>
+          <div class="product-added_to_cart-item">
+            <picture>
+              <img src="https://s3.amazonaws.com/llanomx.wcaas.media/1.152/1.152_1_200x200.jpg" alt="demo"></picture>
+              <article>
+                <b>LOSETA MADERA DABA 20X90 IVORY 1.62 1A</b>
+                <span>Ivory, 20 X 90 cm</span><p>Unidad: <b>$483.71</b></p>
+                <p>Cantidad: <b>1</b></p>
+                <div>
+                  <p>Subtotal:</p>
+                  <b>$483.71</b>
+                </div>
+              </article>
+            </div>
+            <div class="product-added_to_cart-buttons">
+              <a routerLink="/cart/items">Ver carrito</a>
+              <button (click)="seguirComprando()">Seguir comprando</button>
+            </div>
+          </div>
     </div>
+    
     
       <!-- promos 2 -->
       <div id="carouselPromoss" class="carousel slide carousel-promo" data-bs-ride="carousel">
@@ -364,6 +511,52 @@
         </button>
 
       </div>
+      <!-- promos 2 mob-tab -->
+      <div class="scrolling-wrapper carousel-promo-mob">
+        <div class="card-mob">
+          <div>
+            <div class="slider-item">
+              <div>
+                <picture>
+                  <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.webp" type="image/webp">
+                  <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jp2" type="image/jp2">
+                    <img src="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jpg" alt="FREGADERO 8821022 (08131022) 1C 2PERF. 381.381"></picture>
+                <div><b class="">$771.38</b></div>
+                <p>FREGADERO 8821022 (08131022) 1C 2PERF. 381.381</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-mob">
+          <div><div class="slider-item">
+            <div>
+              <picture>
+                <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.webp" type="image/webp">
+                  <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jp2" type="image/jp2"><img src="https://s3.amazonaws.com/llanomx.wcaas.media/444.66/444.66_1_400x400.jpg" alt="6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO"></picture><div><b class="">$770.63</b></div><p>6070023MX.002 PORTA PAPEL SEMIEMPOT INST CROMO</p></div></div></div>
+        </div>
+        <div class="card-mob">
+          <div><div class="slider-item"><div><picture><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.webp" type="image/webp"><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.jp2" type="image/jp2"><img src="https://s3.amazonaws.com/llanomx.wcaas.media/72.206/72.206_1_400x400.jpg" alt="JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE"></picture><div><b class="">$6,372.45</b></div><p>JUEGO DE MANERALES T6193BL SAL- P/LAV. NEGRO MATTE</p></div></div></div>
+        </div>
+        <div class="card-mob">
+          <div><div class="slider-item"><div><picture><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.webp" type="image/webp"><source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.jp2" type="image/jp2"><img src="https://s3.amazonaws.com/llanomx.wcaas.media/1.126/1.126_1_400x400.jpg" alt="AZULEJO ETANA 20X30 HUESO 1.52 1A"></picture><div><b class="">$180.46</b></div><p>6070023MX AZULEJO ETANA 20X30 HUESO 1.52 1A</p></div></div></div>
+        </div>
+            <div class="card-mob">
+          <div class="slider-item">
+            <div>
+              <picture>
+                <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.webp" type="image/webp">
+                <source srcset="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jp2" type="image/jp2">
+                <img src="https://s3.amazonaws.com/llanomx.wcaas.media/36.109/36.109_1_400x400.jpg" alt="FREGADERO 8821022 (08131022) 1C 2PERF. 381.381"></picture>
+              <div>
+                <b class="">$771.38</b>
+              </div>
+              <p>FREGADERO 8821022 (08131022) <br> 1C 2PERF. 381.381</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
      
       
 </main>
+<app-footer></app-footer>

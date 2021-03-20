@@ -1,0 +1,287 @@
+<div class="layout-header layout-header-checkout">
+  <div class="menu-container">
+    <div class="menu-content menu-checkout">
+      <div class="menu-content-left">
+        <div class="menu-logo is-checkout">
+          <a href="/"><img src="/assets/img/logo.svg" alt="Llano de la Torre"></a>
+        </div>
+      </div>
+      <div class="menu-actions">
+        <div class="menu-actions-btn menu-actions-user">
+          <a class="" routerLink="/dashboard">
+            <i class="material-icons">person</i>
+          </a>
+        </div>
+        <div class="menu-actions-btn menu-actions-cart">
+          <a routerLink="/cart"><img src="/assets/img/icon-cart.svg" alt="Carrito"><span>1</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout-breadcrumb">
+    <div class="checkout-breadcrumb-container">
+      <div class="checkout-breadcrumb-step active">
+        <div>
+          <i class="material-icons">done</i>
+        </div>
+        <p>Envío</p>
+      </div>
+      <div class="checkout-breadcrumb-step active">
+        <div>
+          <span>2</span>
+        </div>
+        <p>Pago</p>
+      </div>
+      <div class="checkout-breadcrumb-step ">
+        <div>
+          <span>3</span>
+        </div>
+        <p>¡Listo!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<main>
+
+  <div class="checkout-layout">
+    <div class="checkout-payment">
+      <h3 class="checkout-title">Método de pago</h3>
+      <div class="checkout-payment-options">
+        <label class="checkout-payment-option">
+          <p>PayPal</p>
+          <div>
+            <input type="radio" name="payment-method" value="paypal" (click)="paypalShow()">
+            <span></span>
+            <img src="/assets/img/payment-paypal.svg" alt="PayPal">
+          </div>
+        </label>
+        <label class="checkout-payment-option">
+          <p>Tarjeta crédito o débito</p>
+          <div><input type="radio" name="payment-method" value="card" (click)="cardsShow()"><span></span><img
+              src="/assets/img/payment-cards.svg" alt="Tarjeta de crédito o débito"></div>
+        </label><label class="checkout-payment-option">
+          <p>Depósito</p>
+          <div><input type="radio" name="payment-method" value="bbva" (click)="bbvaShow()"><span></span><img
+              src="/assets/img/payment-bbva_seven.svg" alt="Depósito"></div>
+        </label><label class="checkout-payment-option">
+          <p>Depósito</p>
+          <div><input type="radio" name="payment-method" value="citi" (click)="citiShow()"><span></span><img
+              src="/assets/img/payment-citi_tcomm.svg" alt="Depósito"></div>
+        </label><label class="checkout-payment-option">
+          <p>Depósito</p>
+          <div><input type="radio" name="payment-method" value="oxxo" (click)="oxxoShow()"><span></span><img
+              src="/assets/img/payment-oxxo.svg" alt="Depósito"></div>
+        </label></div>
+      <div class="payment-methods">
+        <div class="payment-default">
+          <p>Por favor selecciona un método de pago</p>
+        </div>
+
+        <div class="cart-paypal payment-paypal" *ngIf="paypal">
+          <img src="assets/img/paypal-logo.svg" alt="PayPal">
+          <p>Por favor verifica que el <b>Código Postal de tu dirección en PayPal sea el mismo</b> que has ingresado
+            para calcular tu envío y asegurar una entrega exitosa.</p>
+          <hr>
+          <p>Serás redireccionado a la plataforma de PayPal para completar tu compra y posteriormente regresarás a
+            nuestro sitio para tu confirmación.</p>
+          <div>
+            <button>Continuar</button>
+          </div>
+        </div>
+
+        <div class="payment-card" *ngIf="cards">
+          <form class="payment-card-form">
+            <div class="form-input-container form-input-full form-radio-container">
+              <label class="form-radio undefined">
+                <input type="radio" name="card-type" value="cred" checked="">
+                <span>Crédito</span>
+              </label>
+              <label class="form-radio undefined">
+                <input type="radio" name="card-type" value="deb">
+                <span>Débito</span>
+              </label>
+            </div>
+            <div class="form-input-container form-input-full">
+              <label class="form-input  ">
+                <span>Titular de la tarjeta</span><input type="text" placeholder="Nombre en tarjeta"
+                  data-checkout="cardholderName" minlength="4" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full"><label class="form-input form-input-card"><span>Número
+                  de tarjeta</span><input type="text" placeholder="0000 0000 0000 0000" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-half-third"><label
+                class="form-input"><span>Expiración</span><input type="text" placeholder="MM/YY" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-half-third"><label class="form-input  "><span>CVV</span><input
+                  type="password" placeholder="- - -" data-checkout="securityCode" maxlength="3" minlength="3"
+                  required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="payment-card-cvv">
+              <div>
+                <p>¿Donde encuentro mi CVV?</p><img src="/assets/img/cvv.svg" alt="¿Donde encuentro mi CVV?">
+              </div>
+            </div>
+            <div class="form-input-container form-input-hidden"><label class="form-input  "><span></span><input
+                  type="hidden" data-checkout="cardNumber" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-hidden"><label class="form-input  "><span></span><input
+                  type="hidden" data-checkout="cardExpirationMonth" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-hidden"><label class="form-input  "><span></span><input
+                  type="hidden" data-checkout="cardExpirationYear" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="payment-card-button">
+              <p>Por tu seguridad, los datos de tu tarjeta <b>NO son almacenados</b> para próximas compras.</p>
+               <button routerLink="/checkout/payment-successful">Pagar</button>
+              <div class="payment-offline-by_mercado">
+                <div><i class="material-icons-outlined ">verified_user</i><b>Compra segura</b></div>
+                <div>
+                  <p>powered by</p><img src="/assets/img/mercadopago-logo.svg" alt="powered by MercadoPago">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="payment-offline" *ngIf="bbva">
+          <div class="payment-offline-logo">
+            <img src="assets/img/method-bbva.svg" alt="Bancomer o 7 Eleven">
+          </div>
+          <div class="payment-offline-content">
+            <h2>Realiza tu depósito en cualquier sucursal Bancomer o 7 Eleven</h2>
+            <div>
+              <span>1</span>
+              <p>Te enviaremos un correo electrónico con el comprobante de pago en Bancomer o 7 Eleven donde encontrarás
+                un código de barras con el cual podrás realizar tu pago.</p>
+            </div>
+            <div>
+              <span>2</span>
+              <p>Imprime el comprobante de pago y acude a la sucursal Bancomer o 7 Eleven de tu preferencia. Proporciona
+                al cajero tu comprobante de pago y el monto a pagar.</p>
+            </div>
+            <div>
+              <span>3</span>
+              <p>Tu compra quedará finalizada una vez que el cajero registre tu código de barras. Tu pago se verá
+                reflejado en las siguientes 12 horas (sólo días hábiles).</p>
+            </div>
+            <b>* Para pagar en Bancomer o 7 Eleven el monto máximo de tu orden debe ser de $40,000.00</b>
+            <br>
+            <b>* Recuerda que debes realizar tu pago en las próximas 36 horas</b>
+          </div>
+          <div class="payment-offline-button"><a routerLink="/checkout/payment-successful"><button>Generar ficha de depósito</button></a>
+            <div class="payment-offline-by_mercado">
+              <div><i class="material-icons-outlined ">verified_user</i><b>Compra segura</b></div>
+              <div>
+                <p>powered by</p><img src="/assets/img/mercadopago-logo.svg" alt="powered by MercadoPago">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-offline" *ngIf="citi">
+          <div class="payment-offline-logo">
+            <img src="/assets/img/method-citi.svg" alt="Citi Banamex o Telecomm">
+          </div>
+          <div class="payment-offline-content">
+            <h2>Realiza tu depósito en cualquier sucursal Citi Banamex o Telecomm</h2>
+            <div><span>1</span>
+              <p>Te enviaremos un correo electrónico con el comprobante de pago en Citi Banamex o Telecomm donde
+                encontrarás un código de barras con el cual podrás realizar tu pago.</p>
+            </div>
+            <div><span>2</span>
+              <p>Imprime el comprobante de pago y acude a la sucursal Citi Banamex o Telecomm de tu preferencia.
+                Proporciona al cajero tu comprobante de pago y el monto a pagar.</p>
+            </div>
+            <div><span>3</span>
+              <p>Tu compra quedará finalizada una vez que el cajero registre tu código de barras. Tu pago se verá
+                reflejado en las siguientes 12 horas (sólo días hábiles).</p>
+            </div><b>* Para pagar en Citi Banamex o Telecomm el monto máximo de tu orden debe ser de $40,000.00</b>
+            <br> <b>* Recuerda que debes realizar tu pago en las próximas 36 horas</b>
+          </div>
+          <div class="payment-offline-button"><a routerLink="/checkout/payment-successful"><button>Generar ficha de depósito</button></a>
+            <div class="payment-offline-by_mercado">
+              <div><i class="material-icons-outlined ">verified_user</i><b>Compra segura</b></div>
+              <div>
+                <p>powered by</p><img src="/assets/img/mercadopago-logo.svg" alt="powered by MercadoPago">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-offline" *ngIf="oxxo">
+          <div class="payment-offline-logo">
+            <img src="/assets/img/method-oxxo.svg" alt="Oxxo">
+          </div>
+          <div class="payment-offline-content">
+            <h2>Realiza tu depósito en cualquier sucursal Oxxo</h2>
+            <div>
+              <span>1</span>
+              <p>Te enviaremos un correo electrónico con el comprobante de pago en Oxxo donde encontrarás un código de
+                barras con el cual podrás realizar tu pago.</p>
+            </div>
+            <div>
+              <span>2</span>
+              <p>Imprime el comprobante de pago y acude a la sucursal Oxxo de tu preferencia. Proporciona al cajero tu
+                comprobante de pago y el monto a pagar.</p>
+            </div>
+            <div><span>3</span>
+              <p>Tu compra quedará finalizada una vez que el cajero registre tu código de barras. Tu pago se verá
+                reflejado en las siguientes 12 horas (sólo días hábiles).</p>
+            </div><b>* Para pagar en Oxxo el monto máximo de tu orden debe ser de $10,000.00</b>
+            <br>
+            <b>* Recuerda que debes realizar tu pago en las próximas 36 horas</b>
+          </div>
+          <div class="payment-offline-button"><a routerLink="/checkout/payment-successful"> <button>Generar ficha de depósito</button></a>
+            <div class="payment-offline-by_mercado">
+              <div><i class="material-icons-outlined ">verified_user</i><b>Compra segura</b></div>
+              <div>
+                <p>powered by</p><img src="/assets/img/mercadopago-logo.svg" alt="powered by MercadoPago">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="checkout-summary">
+      <div class="checkout-summary-container">
+        <div class="checkout-summary-header"><b>Resumen de compra</b><a routerLink="/cart"><i
+              class="material-icons-outlined ">shopping_cart</i>
+            <p>editar carrito</p>
+          </a></div>
+        <div class="checkout-summary-items">
+          <div class="checkout-summary-item">
+            <picture><img src="https://s3.amazonaws.com/llanomx.wcaas.media/907.103/907.103_1_120x120.jpg"
+                alt="LOSETA ALMENA FD 44X44 CAFE 1.54 1A"></picture>
+            <div><b>LOSETA ALMENA FD 44X44 CAFE 1.54 1A</b>
+              <p>Cantidad: <b>1</b></p>
+              <p>Subtotal: <b>$227.43</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-summary-breakdown">
+          <div>
+            <p>Subtotal:</p>
+            <p>$227.43</p>
+          </div>
+          <div>
+            <p>Envío:</p>
+            <p>Envío Gratis</p>
+          </div>
+        </div>
+        <div class="checkout-summary-total">
+          <p>Total:</p><b>$417.43</b><span>IVA incluido</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>

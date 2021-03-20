@@ -1,0 +1,16 @@
+.wishlist-empty {
+    width: 100%;
+    text-align: center;
+}
+.wishlist-empty div {
+    width: 100%;
+    padding: 3rem;
+}
+.wishlist-empty div i {
+    color: var(--grey);
+    font-size: 4rem;
+}
+.wishlist-empty div p {
+    color: var(--grey);
+    margin: 1rem 0;
+}

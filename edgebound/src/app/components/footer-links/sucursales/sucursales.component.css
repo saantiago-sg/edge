@@ -30,20 +30,20 @@
 .branches-list {
     align-items: stretch;
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--light2);
     max-height: 40vh;
     overflow-y: scroll;
 }
 .branches-map {
     width: 100%;
     display: inline-block;
-    border-top: 1px solid #999;
+    border-top: 1px solid var(--grey);
 }
 .branches-info {
     font-family: "MuseoSans-5";
     width: 100%;
     padding: .5rem;
-    background-color: #fff;
+    background-color: var(--white);
     margin-bottom: 1rem;
 }
 .branches-info h5 {
@@ -64,12 +64,12 @@
     margin-bottom: .25rem;
 }
 .branches-info-item h6 i {
-    color: #cc1f2d;
+    color: var(--red2);
     font-size: 1rem;
     margin-right: .25rem;
 }
 .branches-info-item h6 span {
-    color: #666;
+    color: var(--dark);
     font-size: 1rem;
     font-weight: 400;
 }
@@ -80,11 +80,11 @@
 .branches-info-button button {
     padding: .5rem 1rem;
     border-radius: .3rem;
-    color: #fff;
-    background-color: #222;
+    color: var(--white);
+    background-color: var(--black);
 }
 .branches-info-button button:hover {
-    background-color: #cc1f2d;
+    background-color: var(--red2);
 }
 .branches-map iframe {
     width: 100%;

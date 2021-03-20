@@ -21,8 +21,8 @@
     text-align: center;
   }
   .login-switch button.active {
-    color: #fff;
-    background-color: #222;
+    color: var(--white);
+    background-color: var(--black);
   }
   .login-switch button:first-child {
     border-radius: .3rem 0 0 .3rem;
@@ -31,8 +31,8 @@
     min-width: 38%;
     font-size: .85rem;
     font-weight: 400;
-    color: #666;
-    background-color: #f6f6f6;
+    color: var(--dark);
+    background-color: var(--light3);
     padding: .5rem;
     text-align: center;
     -webkit-transition: all .3s ease;
@@ -48,7 +48,7 @@
   .login-form {
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid #ccc;
+    border: 1px solid var(--light1);
     border-radius: .8rem;
     padding: 1.5rem 1rem;
   }
@@ -64,7 +64,7 @@
     margin: 1rem 0;
   }
   .input-global span {
-    color: #666;
+    color: var(--dark);
     position: absolute;
     left: 0;
     top: -1.25rem;
@@ -78,14 +78,14 @@
     text-transform: lowercase;
   }
   input:active, input:focus, select:active, select:focus, textarea:active, textarea:focus {
-    border-color: #00a3b0;
+    border-color: var(--blue);
   }
   .login-password {
     justify-content: space-between;
     align-items: center;
   }
   .login-password a {
-    color: #00a3b0;
+    color: var(--blue);
     font-size: .8rem;
   }
   .login-password div {
@@ -100,7 +100,7 @@
     width: 100%;
     padding: 1rem 0;
     font-size: .85rem;
-    color: #666;
+    color: var(--dark);
 }
   .login-password div i {
     font-size: 1rem;
@@ -118,12 +118,12 @@
   .login-submit button {
     width: 100%;
     padding: 1rem 2rem;
-    color: #fff;
-    background-color: #222;
+    color: var(--white);
+    background-color: var(--black);
     border-radius: .3rem;
   }
   .login-submit button:active, .login-submit button:focus, .login-submit button:hover {
-    background-color: #00a3b0;
+    background-color: var(--blue);
   }
 
   @media screen and (min-width: 760px){

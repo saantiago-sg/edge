@@ -1,0 +1,392 @@
+
+.checkout-payment {
+    width: 100%;
+}
+.checkout-payment-options {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.checkout-payment-option {
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: .5rem;
+    background-color: transparent;
+    border: 1px solid var(--light1);
+    border-radius: .8rem;
+    margin: 0 1rem 1rem 0;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.checkout-payment-option p {
+    font-family: 'MuseoSans-5';
+    width: 100%;
+    display: block;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: .5rem;
+}
+.checkout-payment-option div {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.checkout-payment-option div input {
+    width: auto;
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+}
+.checkout-payment-option input+span {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    z-index: -1;
+}
+.checkout-payment-option div img {
+    width: auto;
+    height: 2rem;
+}
+.checkout-payment-option div img {
+    width: auto;
+    height: 2rem;
+}
+.payment-methods {
+    font-family: 'MuseoSans-5';
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid var(--light1);
+}
+
+.payment-paypal {
+    -webkit-animation: fadeIn .3s ease;
+    animation: fadeIn .3s ease;
+}
+.cart-paypal {
+    width: 100%;
+    text-align: center;
+}
+.cart-paypal img {
+    display: inline-block;
+    width: 9rem;
+    margin-bottom: 2rem;
+}
+.cart-paypal p {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+hr {
+    width: 100%;
+    display: block;
+    margin: 1.5rem 0;
+    border: .5px solid var(--light2);
+}
+.cart-paypal hr+p {
+    font-size: .85rem;
+    color: var(--grey);
+}
+.cart-paypal div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.cart-paypal div button:first-child {
+    color: var(--dark);
+    background-color: var(--light1);
+}
+.cart-paypal div button:last-child {
+    color: var(--white);
+    background-color: var(--paypal);
+}
+.cart-paypal div button:last-child:hover {
+    background-color: var(--black);
+}
+.cart-paypal div button {
+    font-size: .85rem;
+    border-radius: .3rem;
+    padding: 1rem 2rem;
+}
+.cart-paypal p b {
+    font-family: "MuseoSans-7";
+    display: inline;
+}
+.payment-default-off{
+    display: none;
+}
+.payment-card {
+    width: 100%;
+    -webkit-animation: fadeIn .3s ease;
+    animation: fadeIn .3s ease;
+}
+.payment-card-form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.form-radio-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.form-radio {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.form-radio input {
+    width: auto;
+    display: inline-block;
+    margin-right: .25rem;
+}
+.form-radio span {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: .9rem;
+}
+.payment-card-button {
+    width: 100%;
+    margin: 1rem 0;
+}
+.payment-card-button p {
+    font-family: 'MuseoSans';
+    margin: .5rem 0;
+    font-size: .9rem;
+    font-weight: 300;
+    color: var(--grey);
+}
+.payment-card-button button {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+.payment-offline-by_mercado, .payment-offline-by_mercado div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-offline-by_mercado {
+    width: 100%;
+}
+.payment-offline-by_mercado, .payment-offline-by_mercado div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-offline-by_mercado div i {
+    font-size: 1.25rem;
+    margin-right: .2rem;
+    color: var(--blue);
+}
+.payment-offline-by_mercado div b {
+    font-family: 'MuseoSans-3';
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.payment-offline-by_mercado div img {
+    display: inline-block;
+    width: auto;
+    height: 1.5rem;
+}
+.payment-card-cvv div img {
+    width: auto;
+    height: 3rem;
+}
+.payment-card-button button:hover {
+    background-color: var(--red1);
+}
+.payment-card-cvv div p {
+    font-family: "MuseoSans-5";
+    display: block;
+    font-size: .75rem;
+    color: var(--grey);
+    margin: 0 .5rem 0 0;
+}
+.payment-card-cvv div {
+    width: 100%;
+    display: block;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.payment-card-button p b {
+    font-family: "MuseoSans-7";
+    color: var(--black);
+}
+.payment-offline {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    -webkit-animation: fadeIn .3s ease;
+    animation: fadeIn .3s ease;
+}
+.payment-offline-logo {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+.payment-offline-logo img {
+    display: inline-block;
+    width: 50%;
+}
+.payment-offline-content {
+    width: 100%;
+}
+.payment-offline-content h2 {
+  font-family: 'MuseoSans-3';
+    color: var(--black);
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.payment-offline-content div {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+.payment-offline-content div span {
+    display: inline-block;
+    width: 2.25rem;
+    height: 1.25rem;
+    font-size: .75rem;
+    text-align: center;
+    border-radius: 99px;
+    border: 1px solid var(--dark);
+    margin-right: .5rem;
+    line-height: 1.5;
+}
+.payment-offline-content div p {
+    display: inline-block;
+    font-size: .9rem;
+}
+.payment-offline-content b {
+  font-family: 'MuseoSans-3';
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+.payment-offline-button {
+    width: 100%;
+    margin: 2rem 0 1rem;
+}
+.payment-offline-by_mercado {
+    width: 100%;
+}
+.payment-offline-by_mercado, .payment-offline-by_mercado div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-offline-by_mercado div i {
+    font-size: 1.25rem;
+    margin-right: .2rem;
+    color: var(--blue);
+}
+.payment-offline-by_mercado div b {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.payment-offline-by_mercado div p {
+    display: inline-block;
+    color: var(--dark);
+    font-size: .75rem;
+    font-weight: 300;
+    margin-right: .5rem;
+}
+.payment-offline-by_mercado div img {
+    display: inline-block;
+    width: auto;
+    height: 1.5rem;
+}
+.payment-offline-button button {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 760px){
+.cart-paypal div button {
+    padding: 1rem 3rem;
+}
+.payment-card-form {
+    width: 68%;
+}
+.payment-card-button {
+    width: 68%;
+}
+.payment-offline-logo {
+    width: 20%;
+    margin-bottom: 0;
+    border-right: 1px solid var(--light1);
+}
+.payment-offline-logo img {
+    width: 100%;
+}
+.payment-offline-content {
+    width: 78%;
+}
+.payment-offline-button {
+    width: 44%;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+.checkout-payment {
+    width: 68%;
+}
+
+
+}

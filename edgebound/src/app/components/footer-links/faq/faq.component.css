@@ -23,7 +23,7 @@ h2 {
     font-family: "MuseoSans-7";
     text-align: center;
     margin: 10px;
-    color: #999;
+    color: var(--grey);
 }
 .instructions{
     font-size: 1.17em;
@@ -32,7 +32,7 @@ h2 {
     width: 100%;
     margin: 20px auto;
     max-width: 1260px;
-    border-bottom: 2px solid #cc1f2d;
+    border-bottom: 2px solid var(--red2);
 }
 .faqContainer {
     width: 50%;
@@ -44,13 +44,72 @@ h2 {
 .question {
     font-family: "MuseoSans-5";
     border: 1px solid #000;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 7px;
-    cursor: pointer;
 }
 .question:hover {
     background-color: #000;
 }
 .question:hover p {
-    color: #fff;
+    color: var(--white);
 }
+.acordeon_contenido p{
+    font-family: 'MuseoSans-5';
+    color: var(--black);
+    text-rendering: optimizeLegibility;
+}
+/* -- ACORDEON -- */
+
+.faqContainer input{
+    display: none
+}
+.faqContainer input:checked ~ .acordeon_contenido{  /* ~ al hacer esto le digo que cuando haga click en el input, el titulo va a tener la misma funcion, es decir, si hace click en el tiutlo la marcara con tilde o chek */
+    height: auto;
+    /* margin: 10px 0; */
+    padding: 10px;
+}
+.faqContainer input{
+    height: 100%;
+}
+.acordeon input{
+    display: none;
+}
+.acordeon{
+    width: 50%;
+}
+.acordeon_titulo{
+    width: 100%;
+    height: 50px;
+    background: transparent;   
+    margin: 0;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 8px 8px 8px 8px;
+}
+.acordeon_titulo:hover{
+    background-color: black;
+}
+.question label {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.acordeon_contenido{
+    height: 0;  /* oculto la altura */
+    overflow: hidden; /* oculta el texto q esta fuera del contenido */
+    margin: 0;
+    text-align: justify;
+}
+
+/* .acordeon input:checked ~ .acordeon_contenido{  ~ al hacer esto le digo que cuando haga click en el input, el titulo va a tener la misma funcion, es decir, si hace click en el tiutlo la marcara con tilde o chek
+    height: auto;
+    margin: 10px 0;
+} */
+
+/* .efectoHover:hover{
+    transition: 1s;
+    transform: perspective(2000px) rotateX(0deg) rotateY(30deg) rotateZ(0deg) translateX(30px) translateY(20px) translateZ(0px);
+    box-shadow: 1px 1px 15px white;
+} */
+/* FIN ACORDEON */

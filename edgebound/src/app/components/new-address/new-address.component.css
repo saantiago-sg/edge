@@ -1,0 +1,158 @@
+.address-new {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+    -webkit-animation: fadeIn .3s ease;
+    animation: fadeIn .3s ease;
+    padding: 1rem;
+}
+.address-new-form {
+    width: 100%;
+}
+.address-new-form>div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.address-new-header {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.address-new-header div {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1rem .5rem 0;
+    border-bottom: 1px solid var(--black);
+}
+.address-new-header div i {
+    font-size: 2rem;
+    margin-right: .25rem;
+}
+.address-new-header div p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+.address-new-form>div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.form-input-full, .form-input-full-half, .form-selector-full, .form-selector-full-half {
+    width: 100%;
+}
+.form-input-container, .form-selector-container {
+    margin-right: 2%;
+}
+.form-input, .form-selector {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 1rem 0;
+}
+.form-input span, .form-selector span {
+    color: var(--dark);
+    position: absolute;
+    left: 0;
+    top: -1.25rem;
+    font-size: .8rem;
+    font-weight: 400;
+}
+.form-input input, .form-input select, .form-selector input, .form-selector select {
+    padding: .75rem;
+}
+.form-validation {
+    color: var(--red1);
+    font-size: .8rem;
+    min-height: 1rem;
+    padding: .15rem 0;
+}
+.form-input-half-half, .form-input-half-third, .form-selector-half-half, .form-selector-half-third {
+    width: 48%;
+}
+.address-new-form>div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.address-new-alert {
+    width: 100%;
+    margin: 2rem 0;
+}
+.address-new-alert p {
+    color: var(--red2);
+    align-items: center;
+}
+.address-new-form>div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.address-new-submit {
+    width: 100%;
+    margin: 2rem 0;
+}
+.address-new-submit a {
+    font-weight: 300;
+    color: var(--black);
+    background-color: var(--light1);
+    padding: 1rem 3rem;
+    text-align: center;
+    border-radius: .3rem;
+    margin-right: 1rem;
+}
+.address-new-submit button:disabled {
+    cursor: not-allowed;
+    background-color: grey;
+}
+.address-new-submit button {
+    font-weight: 300;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 3rem;
+    text-align: center;
+    border-radius: .3rem;
+}
+
+
+@media screen and (min-width: 760px){
+
+.address-new-header div i {
+    font-size: 1.5rem;
+}
+.address-new-header div p {
+    font-size: 1.25rem;
+}
+.form-input-full-half, .form-selector-full-half {
+    width: 48%;
+}
+.form-input-half-third, .form-selector-half-third {
+    width: 23%;
+}
+
+
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+.address-new {
+    padding: 1rem 0;
+}
+.address-new-form {
+    width: 68%;
+}
+
+}

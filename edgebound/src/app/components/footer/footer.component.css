@@ -3,8 +3,8 @@
     font-family: "MuseoSans-3";
     width: 100%;
     display: block;
-    background-color: #222;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     /* height: 70vh; */
   }
 
@@ -42,7 +42,7 @@
     /* height: 155px; */
 }
 .layout-footer-links ul li a {
-    color: #fff;
+    color: var(--white);
     font-size: .8rem;
     font-weight: 300;
     padding: .5rem;
@@ -69,7 +69,7 @@
     height: 54px;
 }
 .layout-footer-contact i {
-    color: #999;
+    color: var(--grey);
     -webkit-transform: rotate(
 45deg
 );
@@ -80,7 +80,7 @@
 .layout-footer-contact>p {
     font-family: "MuseoSans-3";
     display: inline-block;
-    color: #999;
+    color: var(--grey);
     font-weight: 300;
     margin-right: .5rem;
 }
@@ -92,7 +92,7 @@
     align-items: flex-start;
 }
 .layout-footer-contact div a, .layout-footer-contact div p {
-    color: #fff;
+    color: var(--white);
     font-weight: 400;
     margin-right: 0;
     margin-bottom: .5rem;
@@ -110,7 +110,7 @@
     width: 100%;
     text-align: center;
     padding: 1rem .5rem;
-    border-bottom: .5px solid #666;
+    border-bottom: .5px solid var(--dark);
     margin-bottom: .75rem;
 }
 .layout-footer-cards div:first-child {
@@ -120,7 +120,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: .5rem;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid var(--dark);
     padding-bottom: .5rem;
 }
 .layout-footer-cards div p {
@@ -129,7 +129,7 @@
 }
 .layout-footer-cards div i {
     margin-right: 6px;
-    color: #00a3b0;
+    color: var(--blue);
 }
 .layout-footer-cards div:last-child {
     width: 100%;
@@ -142,7 +142,7 @@
     align-items: center;
     font-size: .75rem;
     font-weight: 300;
-    color: #ccc;
+    color: var(--light1);
     height: 36px;
 }
 .layout-footer-copyright p {
@@ -152,7 +152,7 @@
 }
 .layout-footer-copyright a {
     height: 14px;
-    color: #ccc;
+    color: var(--light1);
 }
 .layout-footer-side {
     display: inline-block;
@@ -166,14 +166,14 @@
     font-family: "MuseoSans-3";
     width: 100%;
     background-color: red;
-    color: #fff;
+    color: var(--white);
   }
   .layout-footer-desktop {
     display: none;
     font-family: "MuseoSans-3";
     width: 100%;
     background-color: green;
-    color: #fff;
+    color: var(--white);
   }
 
   /* ---- FIN MOBILE ---- */
@@ -185,15 +185,15 @@
         font-family: "MuseoSans-3";
         width: 100%;
         display: block;
-        background-color: #222;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
       }
     .layout-footer {
         display: none;
         font-family: "MuseoSans-3";
         width: 100%;
-        background-color: #222;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
       }
     .layout-footer-container {
         padding-bottom: 1rem;
@@ -214,7 +214,7 @@
         text-align: left;
         padding-top: .25rem;
         margin: .5rem 0;
-        border-top: 1px solid #666;
+        border-top: 1px solid var(--dark);
     }
     .layout-footer-links ul {
         grid-template-columns: repeat(3,1fr);
@@ -229,7 +229,7 @@
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        border-top: .5px solid #666;
+        border-top: .5px solid var(--dark);
     }
     .layout-footer-cards div:first-child {
         width: auto;
@@ -258,8 +258,8 @@
         display: none;
         font-family: "MuseoSans-3";
         width: 100%;
-        background-color: #222;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
       }
 }
 /* ---- FIN TABLET ---- */
@@ -270,22 +270,22 @@
         display: block;
         font-family: "MuseoSans-3";
         width: 100%;
-        background-color: #222;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
       }
     .layout-footer-tb {
         display: none;
         font-family: "MuseoSans-3";
         width: 100%;
-        background-color: #222;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
       }
       .layout-footer {
         display: none;
         font-family: "MuseoSans-3";
         width: 100%;
-        background-color: #222;
-        color: #fff;
+        background-color: var(--black);
+        color: var(--white);
       }
     
     .layout-footer-container {

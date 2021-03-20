@@ -1,0 +1,27 @@
+
+.product-calculator-result {
+    display: none;
+    font-family: "MuseoSans-5";
+    width: 100%;
+    font-size: 1.15rem;
+    margin: .25rem 0;
+  }
+  .product-calculator-result b {
+    color: var(--blue);
+  }
+  .result-active{
+    display: block;
+  }
+
+  .flickity-enabled .is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}

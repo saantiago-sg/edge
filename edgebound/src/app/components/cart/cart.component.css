@@ -21,10 +21,10 @@
 }
 .cart-empty div i {
     font-size: 4rem;
-    color: #999;
+    color: var(--grey);
 }
 .cart-empty div p {
-    color: #999;
+    color: var(--grey);
     padding: .5rem;
     margin: .7rem 0;
 }

@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+<main>
+  <div class="breadcrumb">
+    <div class="breadcrumb-path">
+      <a routerLink="/home">
+        <span>Tienda</span>
+        <i class="material-icons">chevron_right</i>
+      </a>
+      <a routerLink="/dashboard">
+        <span>Mi cuenta</span>
+      </a>
+    </div>
+    <div class="breadcrumb-espot">
+      <a routerLink="/envios">
+        <i class="material-icons">local_shipping</i>
+        <span>Envío gratis desde $900 MXN en CDMX y Zona Metropolitana</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="dashboard-container">
+    <div>
+      <div class="dashboard-block dashboard-profile">
+        <div class="dashboard-title">
+          <h3>Perfil</h3>
+        </div>
+        <div class="dashboard-profile-content">
+          <picture class="dashboard-profile-picture">
+            <img src="https://s3.amazonaws.com/llanomx.wcaas.media/000.00/000.00_1_400x400.jpg" alt="user"></picture>
+          <div class="dashboard-profile-info">
+            <h4>saantiagosg@gmail.com</h4>
+            <p> </p>
+            <p></p>
+            <p></p><button><i class="material-icons ">edit</i><span>Editar</span></button>
+          </div>
+        </div>
+        <div class="dashboard-profile-logout"><button><span>Cerrar sesión</span><i
+              class="material-icons ">exit_to_app</i></button></div>
+        <form class="dashboard-profile-form"><label class="input-global "><span>Nombre</span><input type="text"
+              placeholder="Nombre" value=""></label><label class="input-global "><span>Apellido</span><input
+              type="text" placeholder="Apellido" value=""></label><label
+            class="input-global "><span>Teléfono</span><input type="text" placeholder="10 dígitos" maxlength="10"
+              value=""></label><label class="input-global "><span>Cumpleaños</span><input type="date"
+              placeholder="00/00/0000" value=""></label>
+          <div class="form-radio-custom">
+            <p></p><label class="form-radio "><input type="radio" name="gender"
+                value="Female"><span>Mujer</span></label><label class="form-radio "><input type="radio" name="gender"
+                value="Male"><span>Hombre</span></label>
+          </div>
+          <p class="copy">Sólo te contactaremos por teléfono para temas relacionados a tus pedidos, si es necesario.</p>
+          <button>Guardar</button>
+        </form>
+      </div>
+      <div class="dashboard-block dashboard-address_book">
+        <div class="dashboard-title">
+          <h3>Mis direcciones</h3>
+        </div>
+        <div class="dashboard-empty"><i class="material-icons-outlined ">place</i>
+          <p>Aún no tienes direcciones</p>
+        </div>
+        <div class="dashboard-address_book-add"><a routerLink="/new-addres"><i
+              class="material-icons ">add</i><span>Agregar</span></a></div>
+      </div>
+    </div>
+    <div class="dashboard-block dashboard-orders">
+      <div class="dashboard-title">
+        <h3>Mis pedidos</h3>
+      </div>
+      <div class="dashboard-orders-content ">
+        <div class="dashboard-empty"><i class="material-icons-outlined ">shopping_cart</i>
+          <p>Aún no tienes pedidos</p>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-block dashboard-wishlist">
+      <div class="dashboard-title">
+        <h3>Mis favoritos</h3>
+      </div>
+      <div class="dashboard-wishlist-content ">
+        <div class="dashboard-empty"><i class="material-icons ">favorite_border</i>
+          <p>Aún no has agregado favoritos</p>
+        </div>
+      </div>
+      <div class="dashboard-wishlist-more">
+        <div><a routerLink="/wishlist"><span>ver todos / editar</span><i class="material-icons ">chevron_right</i></a></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<app-footer></app-footer>

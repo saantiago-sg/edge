@@ -18,13 +18,27 @@ import { FaqComponent } from './components/footer-links/faq/faq.component';
 import { TerminosComponent } from './components/footer-links/terminos/terminos.component';
 import { MayoreoComponent } from './components/footer-links/mayoreo/mayoreo.component';
 import { RecoverComponent } from './components/recover/recover.component';
+import { SearchComponent } from './components/search/search.component';
+import { CartItemsComponent } from './components/cart-items/cart-items.component';
+import { SubcategoriesComponent } from './components/subcategories/subcategories.component';
+import { AddressComponent } from './components/checkout/address/address.component';
+import { PaymentComponent } from './components/checkout/payment/payment.component';
+import { PaymentSuccessComponent } from './components/checkout/payment-success/payment-success.component';
+import { DashboardLoggedComponent } from './components/dashboard-logged/dashboard-logged.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { NewAddressComponent } from './components/new-address/new-address.component';
 
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'cart', component: CartComponent },
+    { path: 'cart/items', component: CartItemsComponent },
     { path: 'dashboard', component: DashboardComponent },
+    { path: 'dashboard-logged', component: DashboardLoggedComponent },
+    { path: 'wishlist', component: WishlistComponent },
+    { path: 'new-addres', component: NewAddressComponent },
     { path: 'recover', component: RecoverComponent },
+    { path: 'search', component: SearchComponent },
     { path: 'quienes-somos', component: QuienesSomosComponent },
     { path: 'envios', component: EnviosComponent },
     { path: 'sucursales', component: SucursalesComponent },
@@ -40,6 +54,11 @@ export const ROUTES: Routes = [
     { path: 'category/sanitarios-y-muebles-para-bano', component: SanitariosYMueblesParaBanoComponent },
     { path: 'category/calentadores-y-tinacos', component: CalentadoresYTinacosComponent },
     { path: 'category/complementos-y-otros', component: ComplementosYOtrosComponent },
+    { path: 'catalog/category/subcategory', component: SubcategoriesComponent },
+    { path: 'checkout/address', component: AddressComponent },
+    { path: 'checkout/payment', component: PaymentComponent },
+    { path: 'checkout/payment-successful', component: PaymentSuccessComponent },
+
     { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];

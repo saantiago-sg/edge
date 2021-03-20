@@ -5,7 +5,7 @@ hr {
     width: 100%;
     display: block;
     margin: 1.5rem 0;
-    border: .5px solid #eee;
+    border: .5px solid var(--light2);
     margin: 1rem 0;
     /* color: inherit; */
     /* background-color: currentColor; */
@@ -18,8 +18,8 @@ input, select, textarea {
     font-weight: 300;
     padding: 1rem;
     box-shadow: none;
-    color: #222;
-    border: 1px solid #ccc;
+    color: var(--black);
+    border: 1px solid var(--light1);
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -64,7 +64,7 @@ input[type=email] {
 }
 .contact-form h3 {
     font-family: "MuseoSans-7";
-    color: #cc1f2d;
+    color: var(--red2);
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
@@ -74,20 +74,20 @@ input[type=email] {
     margin-bottom: 1rem;
 }
 .contact-form button.disabled, .contact-form button.disabled:hover {
-    color: #fff;
-    background-color: #999;
+    color: var(--white);
+    background-color: var(--grey);
 }
 .contact-form button {
     font-family: "MuseoSans-5";
     width: 100%;
     padding: 1rem 2rem;
-    color: #fff;
-    background-color: #222;
+    color: var(--white);
+    background-color: var(--black);
     border-radius: .3rem;
 }
 .disabled {
-    color: #666;
-    background-color: #eee;
+    color: var(--dark);
+    background-color: var(--light2);
     opacity: .8;
     cursor: not-allowed;
 }
@@ -103,7 +103,7 @@ input[type=email] {
 }
 .contact-espot h3 {
     font-family: "MuseoSans-7";
-    color: #cc1f2d;
+    color: var(--red2);
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
@@ -120,7 +120,7 @@ input[type=email] {
     width: 100%;
 }
 .contact-espot h3 {
-    color: #cc1f2d;
+    color: var(--red2);
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }

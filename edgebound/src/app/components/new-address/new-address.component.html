@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<main>
+  <div class="address-new">
+    <form class="address-new-form">
+      <div class="address-new-header">
+        <div><i class="material-icons ">place</i>
+          <p>Guarda tus direcciones de entrega favoritas</p>
+        </div>
+      </div>
+      <div>
+        <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Alias *</span><input
+              type="text" placeholder="Asigna un alias a tu dirección: Mi casa, Oficina, etc." required="" value="">
+            <p class="form-validation"></p>
+          </label></div>
+      </div>
+      <div>
+        <div class="form-input-container form-input-half-third"><label class="form-input  "><span>Código postal
+              *</span><input type="text" placeholder="- - - - -" maxlength="5" minlength="5" required="" value="">
+            <p class="form-validation"></p>
+          </label></div>
+        <div class="form-input-container form-input-full-half"><label
+            class="form-input  form-disabled"><span>Estado</span><input type="text" disabled="" value="">
+            <p class="form-validation"></p>
+          </label></div>
+        <div class="form-input-container form-input-full-half"><label
+            class="form-input  form-disabled"><span>Delegación/Municipio</span><input type="text" placeholder="..."
+              disabled="" value="">
+            <p class="form-validation"></p>
+          </label></div>
+        <div class="form-input-container form-input-full-half"><label class="form-selector undefined"><span>Colonia
+              *</span><select required="">
+              <option value="Selecciona tu colonia">Selecciona tu colonia</option>
+            </select>
+            <p class="form-validation"></p>
+          </label></div>
+      </div>
+      <div class="address-new-alert">
+        <p class="form-validation">Verifica que hayas llenado todos los campos requeridos *, para continuar.</p>
+      </div>
+      <div class="address-new-submit"><a routerLink="/dashboard-logged">Cancelar</a><button disabled="">Guardar</button></div>
+    </form>
+  </div>
+</main>
+<app-footer></app-footer>

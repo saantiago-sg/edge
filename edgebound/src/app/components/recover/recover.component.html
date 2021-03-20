@@ -1,14 +1,25 @@
+<app-navbar></app-navbar>
 <main>
   <div class="reset-container">
     <h3>Recuperar contraseña</h3>
-    <form class="reset-form">
+    <div class="email-true">
+      <p>Se te ha enviado un e-mail a la dirección indicada. Sigue las instrucciones para recuperar tu contraseña</p>
+    </div>
+    <div class="reset-form">
       <div>
-          <label class="input-global "><span>Email</span><input type="email" placeholder="email@email.com" value=""></label></div>
+          <label class="input-global"><span>Email</span><input type="email"  id="email" placeholder="email@email.com"></label></div>
       <div>
         <p>Ingresa tu correo y te enviaremos el enlace para crear una nueva contraseña.</p>
       </div>
-      <div><button>Enviar</button></div>
-    </form>
+      <div><button (click)='verificar()'>Enviar</button></div>
+    </div>
   </div>
 
+  <div class="notification false">
+    <div class="notification--container bg-red"><i class="material-icons ">warning</i><div><p>El usario que ingresaste no exite. Inténtelo de nuevo</p></div><button (click)="close()"><i class="material-icons ">close</i></button></div>
+  </div>
+
+  
+
 </main>
+<app-footer></app-footer>

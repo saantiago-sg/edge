@@ -35,7 +35,7 @@ main {
 }
 .input-global span {
     font-family: "MuseoSans-5";
-    color: #666;
+    color: var(--dark);
     position: absolute;
     left: 0;
     top: -1.25rem;
@@ -51,19 +51,29 @@ input[type=email] {
 .reset-form div p {
     font-family: "MuseoSans-5";
     font-size: .9rem;
-    color: #666;
+    color: var(--dark);
 }
 .reset-form div button {
     font-family: "MuseoSans-5";
     width: 100%;
     padding: 1rem 2rem;
-    color: #fff;
-    background-color: #222;
+    color: var(--white);
+    background-color: var(--black);
     border-radius: .3rem;
     margin: 1rem 0;
 }
 .reset-form div button:hover {
-    background-color: #00a3b0;
+    background-color: var(--blue);
+}
+.email-true{
+    display: none;
+}
+.email-true-active{
+    font-family: 'MuseoSans-5';
+    display: block;
+}
+.reset-form-off{
+    display: none;
 }
 
 @media screen and (min-width: 760px){

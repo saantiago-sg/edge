@@ -29,6 +29,15 @@ import { FaqComponent } from './components/footer-links/faq/faq.component';
 import { TerminosComponent } from './components/footer-links/terminos/terminos.component';
 import { MayoreoComponent } from './components/footer-links/mayoreo/mayoreo.component';
 import { RecoverComponent } from './components/recover/recover.component';
+import { SearchComponent } from './components/search/search.component';
+import { CartItemsComponent } from './components/cart-items/cart-items.component';
+import { SubcategoriesComponent } from './components/subcategories/subcategories.component';
+import { AddressComponent } from './components/checkout/address/address.component';
+import { PaymentComponent } from './components/checkout/payment/payment.component';
+import { PaymentSuccessComponent } from './components/checkout/payment-success/payment-success.component';
+import { DashboardLoggedComponent } from './components/dashboard-logged/dashboard-logged.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { NewAddressComponent } from './components/new-address/new-address.component';
 
 // pipes
 
@@ -57,7 +66,16 @@ import { RecoverComponent } from './components/recover/recover.component';
     FaqComponent,
     TerminosComponent,
     MayoreoComponent,
-    RecoverComponent
+    RecoverComponent,
+    SearchComponent,
+    CartItemsComponent,
+    SubcategoriesComponent,
+    AddressComponent,
+    PaymentComponent,
+    PaymentSuccessComponent,
+    DashboardLoggedComponent,
+    WishlistComponent,
+    NewAddressComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<main>
+  <div class="breadcrumb">
+    <div class="breadcrumb-path">
+      <a href="">
+        <span>Tienda</span>
+        <i class="material-icons">chevron_right</i>
+      </a>
+      <a href="">
+        <span>Busqueda: ceramicos</span>
+      </a>
+    </div>
+    <div class="breadcrumb-espot">
+      <a href="">
+        <i class="material-icons">local_shipping</i>
+        <span>Envío gratis desde $900 MXN en CDMX y Zona Metropolitana</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="catalog">
+    <div class="filters-placeholder"></div>
+    <div class="catalog-container">
+        <app-catalog-item *ngFor="let i of arre;"></app-catalog-item>
+    </div>
+    <div class="catalog-pagination">
+      <p>Llegaste al final de esta categoría</p>
+    </div>
+  </div>
+
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,273 @@
+<div class="layout-header layout-header-checkout">
+  <div class="menu-container">
+    <div class="menu-content menu-checkout">
+      <div class="menu-content-left">
+        <div class="menu-logo is-checkout">
+          <a href="/"><img src="/assets/img/logo.svg" alt="Llano de la Torre"></a>
+        </div>
+      </div>
+      <div class="menu-actions">
+        <div class="menu-actions-btn menu-actions-user">
+          <a class="" routerLink="/dashboard">
+            <i class="material-icons">person</i>
+          </a>
+        </div>
+        <div class="menu-actions-btn menu-actions-cart">
+          <a routerLink="/cart"><img src="/assets/img/icon-cart.svg" alt="Carrito"><span>1</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout-breadcrumb">
+    <div class="checkout-breadcrumb-container">
+      <div class="checkout-breadcrumb-step active">
+        <div>
+          <span>1</span></div>
+        <p>Envío</p>
+      </div>
+      <div class="checkout-breadcrumb-step ">
+        <div>
+          <span>2</span>
+        </div>
+        <p>Pago</p>
+      </div>
+      <div class="checkout-breadcrumb-step ">
+        <div>
+          <span>3</span>
+        </div>
+        <p>¡Listo!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="checkout-layout">
+    <div class="checkout-address">
+      <h3 class="checkout-title">Dirección de envío</h3>
+      <div class="checkout-shipping">
+        <form class="checkout-shipping-form">
+          <div>
+            <div class="form-input-container form-input-half-third">
+              <label class="form-input  form-disabled">
+                <span>Código postal</span>
+                <input type="text" disabled="" value="55090">
+                <p class="form-validation">
+
+                </p>
+              </label>
+            </div>
+            <div class="form-input-container form-input-full-half">
+              <label class="form-input  form-disabled">
+                <span>Estado</span>
+                <input type="text" disabled="" value="México">
+                <p class="form-validation"></p>
+              </label>
+            </div>
+            <div class="form-input-container form-input-full-half">
+              <label class="form-input  form-disabled"><span>Delegación/Municipio</span><input type="text" disabled=""
+                  value="Ecatepec de Morelos">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full-half"><label class="form-selector undefined"><span>Colonia
+                  *</span><select required="">
+                  <option value="" disabled="" selected="">Selecciona tu colonia</option>
+                  <option value="El Potrero">El Potrero</option>
+                  <option value="Las Palmas Ecatepec">Las Palmas Ecatepec</option>
+                  <option value="Jajalpa Olímpica">Jajalpa Olímpica</option>
+                  <option value="El Pocito">El Pocito</option>
+                  <option value="El Jaguey">El Jaguey</option>
+                  <option value="Bonito Ecatepec">Bonito Ecatepec</option>
+                  <option value="Jajalpa">Jajalpa</option>
+                  <option value="Los Laureles">Los Laureles</option>
+                  <option value="El Arbolito Jajalpa">El Arbolito Jajalpa</option>
+                  <option value="San José Jajalpa">San José Jajalpa</option>
+                  <option value="Ecatepec 40 Casas">Ecatepec 40 Casas</option>
+                  <option value="Río Piedras">Río Piedras</option>
+                  <option value="Obrera Jajalpa">Obrera Jajalpa</option>
+                </select>
+                <p class="form-validation"></p>
+              </label></div>
+          </div>
+          <div>
+            <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Nombre
+                  *</span><input type="text" placeholder="Nombre" minlength="3" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Apellido
+                  *</span><input type="text" placeholder="Apellido" minlength="3" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Calle
+                  *</span><input type="text" placeholder="Calle" maxlength="30" minlength="1" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-half-third"><label class="form-input  "><span>Número
+                  *</span><input type="text" placeholder="#" minlength="1" required="" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-half-third"><label
+                class="form-input  "><span>Interior</span><input type="text" placeholder="opcional" maxlength="6"
+                  value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Email de
+                  contacto *</span><input type="email" placeholder="Email" maxlength="40" minlength="10" required=""
+                  value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Teléfono de
+                  contacto *</span><input type="text" placeholder="10 dígitos" maxlength="10" minlength="10" required=""
+                  value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Persona que
+                  recibirá el pedido (opcional)</span><input type="text" placeholder="Nombre" value="">
+                <p class="form-validation"></p>
+              </label></div>
+            <div class="form-input-container form-input-full"><label class="form-input  "><span>Comparte referencias
+                  para que sea más fácil llegar tu dirección (opcional)</span><textarea
+                  placeholder="..."></textarea></label></div>
+          </div>
+          <div>
+            <div class="form-input-container form-input-full">
+              <div class="form-input-yes_no">
+                <p>¿Requieres facturar tu pedido?</p>
+                <label class="form-radio ">
+                  <input (click)="hideForm()" type="radio" name="billing-required" value="no" checked=""><span>No</span>
+                </label>
+                <label class="form-radio">
+                  <input (click)="showForm()" type="radio" name="billing-required" value="yes"><span>Si</span>
+                </label>
+              </div>
+            </div>
+            <div class="checkout-billing">
+              <div class="checkout-billing-form" *ngIf="show">
+                <div>
+                  <div class="form-input-container form-input-full-half">
+                    <label class="form-input">
+                      <span>RFC *</span><input type="text" placeholder="RFC" required="" value="">
+                      <p class="form-validation"></p>
+                    </label>
+                  </div>
+                  <div class="form-input-container form-input-full-half">
+                    <label class="form-input  ">
+                      <span>Razón Social *</span>
+                      <input type="text" placeholder="Razón social" required="" value="">
+                      <p class="form-validation"></p>
+                    </label>
+                  </div>
+                  <div class="form-input-container form-input-full">
+                    <div class="form-input-yes_no">
+                      <p>¿Requieres una dirección diferente para la factura?</p>
+                      <label class="form-radio">
+                        <input (click)="hideFormTwo()" type="radio" name="billing-address" value="no" checked=""><span>No</span>
+                      </label>
+                      <label class="form-radio">
+                        <input (click)="showFormTwo()" type="radio" name="billing-address" value="yes">
+                        <span>Si</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngIf="showTwo"> 
+                  <div class="form-input-container form-input-full-half">
+                    <label class="form-input  ">
+                      <span>Código postal *</span>
+                      <input type="text" placeholder="- - - - -" maxlength="5" minlength="5" required="" value="">
+                      <p class="form-validation"></p>
+                    </label>
+                  </div>
+                  <div class="form-input-container form-input-full-half">
+                    <label class="form-input  form-disabled">
+                      <span>Estado</span>
+                      <input type="text" disabled="" value="">
+                      <p class="form-validation"></p>
+                    </label></div>
+                  <div class="form-input-container form-input-full-half">
+                    <label class="form-input  ">
+                      <span>Delegación/Municipio</span>
+                      <input type="text" placeholder="Delegación/Municipio" value="">
+                      <p class="form-validation"></p>
+                    </label>
+                  </div>
+                  <div class="form-input-container form-input-full-half">
+                    <label class="form-selector undefined">
+                      <span>Colonia * *</span><select required="">
+
+                      </select>
+                      <p class="form-validation"></p>
+                    </label></div>
+                  <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Calle
+                        *</span><input type="text" placeholder="Calle" maxlength="30" minlength="1" required=""
+                        value="">
+                      <p class="form-validation"></p>
+                    </label></div>
+                  <div class="form-input-container form-input-half-third"><label class="form-input  "><span>Número
+                        *</span><input type="text" placeholder="#" minlength="1" required="" value="">
+                      <p class="form-validation"></p>
+                    </label></div>
+                  <div class="form-input-container form-input-half-third"><label
+                      class="form-input  "><span>Interior</span><input type="text" placeholder="opcional" maxlength="6"
+                        value="">
+                      <p class="form-validation"></p>
+                    </label></div>
+                  <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Email de
+                        contacto *</span><input type="email" placeholder="Email" maxlength="40" minlength="10"
+                        required="" value="">
+                      <p class="form-validation"></p>
+                    </label></div>
+                  <div class="form-input-container form-input-full-half"><label class="form-input  "><span>Teléfono
+                        de contacto *</span><input type="text" placeholder="10 dígitos" maxlength="10" minlength="10"
+                        required="" value="">
+                      <p class="form-validation"></p>
+                    </label></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div></div>
+          <div class="address-new-alert">
+            <p class="form-validation">Verifica que hayas llenado todos los campos requeridos *, para continuar.</p>
+          </div>
+          <div class="checkout-address-submit"><button disabled="">Continuar</button>
+            <a routerLink="/checkout/payment"><button class="btn-on">Continuar</button></a> 
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="checkout-summary">
+      <div class="checkout-summary-container">
+        <div class="checkout-summary-header"><b>Resumen de compra</b><a routerLink="/cart/items"><i
+              class="material-icons-outlined ">shopping_cart</i>
+            <p>editar carrito</p>
+          </a></div>
+        <div class="checkout-summary-items">
+          <div class="checkout-summary-item">
+            <picture><img src="https://s3.amazonaws.com/llanomx.wcaas.media/1.152/1.152_1_120x120.jpg"
+                alt="LOSETA MADERA DABA 20X90 IVORY 1.62 1A"></picture>
+            <div><b>LOSETA MADERA DABA 20X90 IVORY 1.62 1A</b>
+              <p>Cantidad: <b>1</b></p>
+              <p>Subtotal: <b>$483.71</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-summary-breakdown">
+          <div>
+            <p>Subtotal:</p>
+            <p>$483.71</p>
+          </div>
+          <div>
+            <p>Envío:</p>
+            <p>$190.00</p>
+          </div>
+        </div>
+        <div class="checkout-summary-total">
+          <p>Total:</p><b>$673.71</b><span>IVA incluido</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

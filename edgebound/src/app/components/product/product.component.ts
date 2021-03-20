@@ -1,15 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+// tslint:disable-next-line:typedef
+addCart(){
+  const productAdded = document.querySelector('.product-added_to_cart');
+  productAdded?.classList.add('active-cart');
+}
+// tslint:disable-next-line:typedef
+seguirComprando(){
+  const productAdded = document.querySelector('.product-added_to_cart');
+  productAdded?.classList.remove('active-cart');
+}
+
+// tslint:disable-next-line:typedef
+calcular(){
+  const calcularResult = document.querySelector('.product-calculator-result');
+  calcularResult?.classList.add('result-active');
+}
 
 }

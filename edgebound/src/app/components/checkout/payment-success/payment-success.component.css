@@ -1,0 +1,252 @@
+.checkout-success {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+    padding: 1rem;
+}
+.checkout-success-header {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.checkout-success-header h1 {
+    font-family: 'MuseoSans-5';
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.checkout-success-header div {
+  font-family: 'MuseoSans-5';
+    width: 100%;
+}
+.checkout-success-header div p {
+    display: inline-block;
+    margin-right: .5rem;
+}
+.checkout-success-header div b {
+    color: var(--blue);
+}
+.checkout-success-breakdown_offline_alert {
+    font-family: 'MuseoSans-5';
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--black);
+    font-size: 1rem;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+.checkout-success-breakdown_offline_alert div:first-child {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.checkout-success-breakdown_offline_alert div:first-child i {
+    font-size: 1.25rem;
+    margin-right: .5rem;
+}
+.checkout-success-breakdown_offline_alert i {
+    font-size: 2.5rem;
+    margin-right: .5rem;
+}
+.checkout-success-breakdown_offline_alert p {
+    width: 100%;
+    font-weight: 700;
+}
+.checkout-success-breakdown_offline_alert div:first-child p {
+    display: inline-block;
+}
+.checkout-success-breakdown_offline_alert div:nth-child(2) {
+    padding: 1rem;
+    background-color: var(--light3);
+    border-radius: .3rem;
+    margin: .5rem 0;
+}
+.checkout-success-breakdown_offline_alert div:nth-child(2) b {
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: .75rem;
+}
+.checkout-success-breakdown_offline_alert div:nth-child(2) p {
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom: .25rem;
+}
+.checkout-success-breakdown_offline_alert div:nth-child(2) div {
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: .75rem 1rem;
+    background-color: var(--red2);
+    border-radius: .3rem;
+}
+.checkout-success-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.checkout-success-title {
+    padding: 1rem .5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--black);
+}
+.checkout-success-title h2 {
+    font-family: 'MuseoSans-5';
+    font-size: 1rem;
+    font-weight: 400;
+}
+.checkout-success-breakdown {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.checkout-success-breakdown_method {
+    font-family: 'MuseoSans-5';
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--light1);
+}
+.checkout-success-breakdown_method img {
+    display: inline-block;
+    height: 2rem;
+    width: auto;
+    margin-right: 1rem;
+}
+.checkout-success-breakdown_method p {
+    font-weight: 300;
+    display: inline-block;
+    margin-left: .5rem;
+    color: var(--dark);
+}
+.checkout-success-breakdown_method b {
+    color: var(--black);
+    display: inline-block;
+    margin-left: .25rem;
+}
+.checkout-success-breakdown_offline_alert i {
+    font-size: 2.5rem;
+    margin-right: .5rem;
+}
+.checkout-success-breakdown_offline_alert p {
+    font-family: 'MuseoSans-5';
+    width: 100%;
+    font-weight: 700;
+}
+.checkout-success-breakdown_totals {
+    width: 100%;
+    color: var(--dark);
+    margin: 1rem 0;
+}
+.checkout-success-breakdown_totals div {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-success-breakdown_totals div p {
+    font-family: 'MuseoSans-3';
+    width: 80%;
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 300;
+    margin: .25rem 0;
+}
+.checkout-success-breakdown_totals div p:last-child {
+    font-family: 'MuseoSans-5';
+    color: var(--black);
+    font-weight: 400;
+}
+.color-red {
+    color: var(--red2)!important;
+}
+.checkout-success-breakdown_totals div p span {
+    color: var(--grey);
+    font-size: .8rem;
+}
+.checkout-success-address {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.checkout-success-address p {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 300;
+}
+.checkout-success-address div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+}
+.checkout-success-address div i {
+    font-size: 1.25rem;
+    margin-right: .25rem;
+}
+.checkout-success-address div b {
+    font-size: .9rem;
+}
+.checkout-success-address p {
+    font-family: 'MuseoSans-3';
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 300;
+}
+.checkout-success-address div b {
+    font-size: .9rem;
+}
+.checkout-success-items {
+    width: 100%;
+    padding: 1rem;
+}
+.checkout-success-buttons a.btn_home {
+    color: var(--black);
+    background-color: var(--white);
+}
+.checkout-success-buttons a {
+    padding: 1rem;
+    text-align: center;
+}
+.checkout-success-buttons a, .checkout-success-buttons button {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    border: 1px solid var(--black);
+}
+.checkout-success-buttons a.btn_home:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+@media screen and (min-width: 760px){
+.checkout-success-breakdown_offline_alert i {
+    font-size: 1.25rem;
+}
+.checkout-success-content>div {
+    width: 46%;
+}
+.checkout-success-breakdown_offline_alert i {
+    font-size: 1.25rem;
+}
+
+
+
+
+}
+
+@media screen and (min-width: 1024px){
+.checkout-success-content>div {
+    width: 31%;
+}
+
+}
