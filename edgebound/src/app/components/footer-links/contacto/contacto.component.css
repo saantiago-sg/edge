@@ -47,7 +47,7 @@ input[type=email] {
     align-items: flex-start;
 }
 .contact-header h2 {
-    font-family: "MuseoSans-5";
+    
     width: 100%;
     margin: 1rem 0 2rem;
     font-size: 1.25rem;
@@ -63,13 +63,13 @@ input[type=email] {
     margin-bottom: 1rem;
 }
 .contact-form h3 {
-    font-family: "MuseoSans-7";
+    font-weight: 700;
     color: var(--red2);
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 .contact-form label {
-    font-family: "MuseoSans-3";
+    
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -78,7 +78,7 @@ input[type=email] {
     background-color: var(--grey);
 }
 .contact-form button {
-    font-family: "MuseoSans-5";
+    
     width: 100%;
     padding: 1rem 2rem;
     color: var(--white);
@@ -102,7 +102,7 @@ input[type=email] {
     width: 100%;
 }
 .contact-espot h3 {
-    font-family: "MuseoSans-7";
+    
     color: var(--red2);
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -112,7 +112,7 @@ input[type=email] {
     margin: 0;
 }
 .contact-phone-list li {
-    font-family: "MuseoSans-5";
+    
     margin-bottom: .5rem;
     height: 19px;
 }
@@ -120,12 +120,13 @@ input[type=email] {
     width: 100%;
 }
 .contact-espot h3 {
+    font-weight: 700;
     color: var(--red2);
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 .contact-more p {
-    font-family: "MuseoSans-5";
+    
     margin-bottom: .5rem;
 }
 @media screen and (min-width: 760px){

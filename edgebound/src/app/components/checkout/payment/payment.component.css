@@ -27,7 +27,7 @@
     transition: all .3s ease;
 }
 .checkout-payment-option p {
-    font-family: 'MuseoSans-5';
+    font-weight: 500;
     width: 100%;
     display: block;
     font-size: .75rem;
@@ -68,7 +68,7 @@
     height: 2rem;
 }
 .payment-methods {
-    font-family: 'MuseoSans-5';
+    font-weight: 500;
     width: 100%;
     margin: 1rem 0;
     padding: 1rem 0;
@@ -129,7 +129,7 @@ hr {
     padding: 1rem 2rem;
 }
 .cart-paypal p b {
-    font-family: "MuseoSans-7";
+    font-weight: 700;
     display: inline;
 }
 .payment-default-off{
@@ -179,7 +179,6 @@ hr {
     margin: 1rem 0;
 }
 .payment-card-button p {
-    font-family: 'MuseoSans';
     margin: .5rem 0;
     font-size: .9rem;
     font-weight: 300;
@@ -215,7 +214,6 @@ hr {
     color: var(--blue);
 }
 .payment-offline-by_mercado div b {
-    font-family: 'MuseoSans-3';
     color: var(--black);
     font-size: 1rem;
     font-weight: 300;
@@ -234,7 +232,7 @@ hr {
     background-color: var(--red1);
 }
 .payment-card-cvv div p {
-    font-family: "MuseoSans-5";
+    
     display: block;
     font-size: .75rem;
     color: var(--grey);
@@ -248,7 +246,7 @@ hr {
     align-items: center;
 }
 .payment-card-button p b {
-    font-family: "MuseoSans-7";
+    font-weight: 700;
     color: var(--black);
 }
 .payment-offline {
@@ -274,7 +272,6 @@ hr {
     width: 100%;
 }
 .payment-offline-content h2 {
-  font-family: 'MuseoSans-3';
     color: var(--black);
     font-size: 1.3rem;
     font-weight: 300;
@@ -305,7 +302,7 @@ hr {
     font-size: .9rem;
 }
 .payment-offline-content b {
-  font-family: 'MuseoSans-3';
+    font-weight: 700;
     font-size: .9rem;
     margin-bottom: .5rem;
 }

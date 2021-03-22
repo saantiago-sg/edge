@@ -8,33 +8,33 @@
     padding: .5rem;
 }
 .sectionTitle {
-    font-family:"MuseoSans-7";
     margin-bottom: 20px;
     text-align: center;
     letter-spacing: .2em;
 }
 .sectionTitle h2{
     font-size: 1.5em;
+    font-weight: 700;
 }
 .subtitle {
-    font-family:"MuseoSans-7";
     margin: 10px 0;
     letter-spacing: .1em;
 }
 .subtitle h3{
     font-size: 1.17em;
+    font-weight: 700;
 }
 .termContent {
     padding-left: 25px;
 }
 .termContent p {
-    font-family: "MuseoSans-5";
+    
     line-height: 1.6;
     margin: 16px 0;
     text-align: justify;
 }
 .termContent ol {
-    font-family: "MuseoSans-5";
+    
     padding-left: 25px;
     margin: 10px 0;
     list-style: decimal;
@@ -65,7 +65,7 @@
     text-align: justify;
 }
 .termContent ul li {
-    font-family: "MuseoSans-5";
+    
     list-style-type: disc;
     line-height: 1.3;
 }

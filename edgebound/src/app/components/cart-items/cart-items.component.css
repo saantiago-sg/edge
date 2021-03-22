@@ -48,7 +48,7 @@
     margin-bottom: .5rem;
 }
 .cart-item-info {
-    font-family: "MuseoSans-5";
+    
     width: 68%;
 }
 .cart-item-info a {
@@ -97,7 +97,7 @@
     line-height: 0;
 }
 .cart-item-combo p {
-    font-family: "MuseoSans-5";
+    
     font-size: .8rem;
     padding: .5rem 1rem;
     background-color: var(--light2);
@@ -113,20 +113,20 @@
     align-items: center;
 }
 .cart-item-subtotal p {
-    font-family: "MuseoSans-5";
+    
     color: var(--grey);
     font-size: .8rem;
     margin-right: .25rem;
 }
 .cart-item-subtotal b {
-    font-family: "MuseoSans-5";
+    
     color: var(--red1);
     font-size: .9rem;
     font-weight: 400;
 }
 .cart-summary {
     width: 100%;
-    font-family: "MuseoSans-5";
+    
 }
 .cart-summary-container {
     padding: 1rem;
@@ -157,7 +157,7 @@
 }
 .cart-coupon-form label input {
     text-transform: uppercase;
-    font-family: "MuseoSans-3";
+    
 }
 .cart-coupon-form label i {
     position: absolute;
@@ -192,7 +192,7 @@
     padding: .25rem 0;
 } */
 .cart-breakdown>div>p:first-child {
-    font-family: "MuseoSans-3";
+    
     width: 45%;
     color: var(--dark);
     font-weight: 300;
@@ -215,14 +215,13 @@
     margin-right: .25rem;
 }
 .cart-shipping>div p {
-    font-family: "MuseoSans-3";
     color: var(--dark);
     display: inline-block;
     font-size: .85rem;
     font-weight: 300;
 }
 .cart-shipping-title p b{
-    font-family: "MuseoSans-7";
+    font-weight: 700;
 }
 .cart-shipping form {
     width: 100%;
@@ -272,7 +271,7 @@ display: none;
     display:none;
 }
 .cart-breakdown-coupon p {
-    font-family: "MuseoSans-5";
+    
     color: var(--green);
 }
 .cart-breakdown-coupon i {
@@ -341,7 +340,7 @@ form .btn-reenvio-active{
     margin-bottom: .5rem;
 }
 .cart-shipping-invalid p b{
-    font-family:"MuseoSans-7";
+    font-weight: 700;
 }
 .cart-shipping-invalid div {
     width: 100%;

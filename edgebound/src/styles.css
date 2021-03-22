@@ -5,22 +5,53 @@
   outline: none;
   box-sizing: border-box;
 }
-@font-face{
-  font-family: "MuseoSans";
-  src: url("assets/subset-MuseoSans-100.woff2");
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('assets/subset-MuseoSans-100.eot');
+  src: url('assets/subset-MuseoSans-100.eot?#iefix') format('embedded-opentype'),
+      url('assets/subset-MuseoSans-100.woff2') format('woff2'),
+      url('assets/subset-MuseoSans-100.woff') format('woff'),
+      url('assets/subset-MuseoSans-100.ttf') format('truetype'),
+      url('assets/subset-MuseoSans-100.svg#MuseoSans-100') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('assets/subset-MuseoSans-300.eot');
+  src: url('assets/subset-MuseoSans-300.eot?#iefix') format('embedded-opentype'),
+      url('assets/subset-MuseoSans-300.woff2') format('woff2'),
+      url('assets/subset-MuseoSans-300.woff') format('woff'),
+      url('assets/subset-MuseoSans-300.ttf') format('truetype'),
+      url('assets/subset-MuseoSans-300.svg#MuseoSans-300') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face{
-  font-family: "MuseoSans-3";
-  src: url("assets/subset-MuseoSans-300.woff2");
+    font-family: 'Museo Sans';
+    src: url('assets/subset-MuseoSans-500.eot');
+    src: url('assets/subset-MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+        url('assets/subset-MuseoSans-500.woff2') format('woff2'),
+        url('assets/subset-MuseoSans-500.woff') format('woff'),
+        url('assets/subset-MuseoSans-500.ttf') format('truetype'),
+        url('assets/subset-MuseoSans-500.svg#MuseoSans-500') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }
-@font-face{
-  font-family: "MuseoSans-5";
-  src: url("assets/subset-MuseoSans-500.woff2");
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('assets/subset-MuseoSans-700.eot');
+  src: url('assets/subset-MuseoSans-700.eot?#iefix') format('embedded-opentype'),
+      url('assets/subset-MuseoSans-700.woff2') format('woff2'),
+      url('assets/subset-MuseoSans-700.woff') format('woff'),
+      url('assets/subset-MuseoSans-700.ttf') format('truetype'),
+      url('assets/subset-MuseoSans-700.svg#MuseoSans-700') format('svg');
+  font-weight: 700;
+  font-style: normal;
 }
-@font-face{
-  font-family: "MuseoSans-7";
-  src: url("assets/subset-MuseoSans-700.woff2");
-}
+
+/* COLORS */
 :root{
   --white: #fff;
 --black: #222222;
@@ -46,7 +77,6 @@
 --blackAlpha: rgba(black, 0.75);
 --whiteAlpha: rgba(white, 0.75);
 }
-/* COLORS */
 .bg-red{
   background-color: var(--red2)!important;
 }
@@ -63,7 +93,7 @@ body {
 }
 
 a {
-  display: inline-block;
+  display: block;
   color:var(--white);
   text-decoration: none;
   cursor: pointer;
@@ -214,7 +244,7 @@ header {
   flex-flow: row nowrap;
   align-items: center;
   background-color: var(--light2);
-  font-family: "MuseoSans-3";
+  
 }
 
 .search-form label {
@@ -242,7 +272,7 @@ label {
 }
 
 .menu-links {
-  font-family: "MuseoSans-5";
+  
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -299,7 +329,7 @@ label {
 }
 
 .menu-actions {
-  font-family: "MuseoSans-5";
+  
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -362,7 +392,7 @@ label {
 .nav-menu {
   display: block;
   background-color: var(--black);
-  font-family: "MuseoSans-5";
+  
   width: 100%;
   /* max-width: 1260px; */
   /* height: 39px;
@@ -396,7 +426,7 @@ label {
   font-size: .8rem;
   border: none;
   padding: .6rem .5rem;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .dropbtn:focus {
@@ -625,7 +655,7 @@ main {
 }
 .card-title {
   color: black;
-  font-family: "MuseoSans-3";
+  
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -635,7 +665,7 @@ main {
   margin-right: 1rem; */
 }
 .card-text {
-  font-family: "MuseoSans-5";
+  
   color: black;
   font-size: .85rem;
   min-height: 34px;
@@ -1012,7 +1042,7 @@ border-radius: 99px;
   margin: .5rem 0;
 }
 .catalog-item-price {
-  font-family: "MuseoSans-5";
+  
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -1021,7 +1051,7 @@ border-radius: 99px;
   margin-bottom: .5rem;
 }
 .catalog-item-price b {
-  font-family: "MuseoSans-5";
+  
   font-size: 1.25rem;
   margin-right: 1rem;
 }
@@ -1096,7 +1126,7 @@ border-radius: 99px;
   align-items: center;
 }
 .product-info-price-desktop-container>div>p {
-  font-family: "MuseoSans-5";
+  
   font-size: 1.65rem;
   margin-right: .75rem;
 }
@@ -1181,7 +1211,7 @@ border-radius: 99px;
   background-color: var(--black);
 }
 .product-options-text label span {
-  font-family: "MuseoSans-5";
+  
   font-size: .8rem;
   padding: .5rem;
   color: var(--black);
@@ -1190,7 +1220,7 @@ border-radius: 99px;
   transition: all .3s ease;
 }
 .product-options>p {
-  font-family: "MuseoSans-5";
+  
   font-size: .9rem;
   display: inline-block;
   margin: .25rem .5rem .25rem 0;
@@ -1209,7 +1239,7 @@ border-radius: 99px;
   align-items: center;
 }
 .product-add-to-cart {
-  font-family: "MuseoSans-5";
+  
   width: 100%;
   padding: .5rem;
   display: flex;
@@ -1256,17 +1286,17 @@ border-radius: 99px;
 }
 .product-calculator-header {
   z-index: 1;
-  font-family: "MuseoSans-7";
+  
   width: 100%;
   margin-bottom: .5rem;
 }
 .product-calculator-header h4 {
-  font-family: "MuseoSans-7";
+  font-weight: 700;
   font-size: 1.15rem;
   margin-bottom: .25rem;
 }
 .product-calculator-header p {
-  font-family: "MuseoSans-3";
+  
   font-size: .9rem;
   font-weight: 300;
 }
@@ -1282,18 +1312,18 @@ border-radius: 99px;
   background-color: var(--red1);
 }
 .product-calculator-form label {
-  font-family: "MuseoSans-3";
+  
   margin-right: .5rem;
 }
 .product-calculator-form button {
-    font-family: "MuseoSans-5";
+    
     padding: 1rem 1.5rem;
     border-radius: .3rem;
     color: var(--white);
     background-color: var(--red2);
 }
 .product-calculator-copy {
-    font-family: "MuseoSans-5";
+    
     width: 100%;
     font-size: .8rem;
     color: var(--grey);
@@ -1332,7 +1362,7 @@ border-radius: 99px;
   width: 100%;
 }
 .product-specs-title h3 {
-  font-family: "MuseoSans-3";
+  
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 300;
@@ -1346,12 +1376,12 @@ border-radius: 99px;
   margin-bottom: 1rem;
 }
 .product-specs-description p {
-  font-family: "MuseoSans-5";
+  
   font-size: .9rem;
   padding: .5rem;
 }
 .product-specs-attributes {
-  font-family: "MuseoSans-5";
+  
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -1378,7 +1408,10 @@ border-radius: 99px;
   background-color: var(--light3);
   width: 40%;
 }
-
+.filters-orderby p i {
+  font-size: 1rem;
+  margin-right: .1rem;
+}
 .product-added_to_cart {
   display:none;
   width: 100%;
@@ -1397,7 +1430,7 @@ border-radius: 99px;
   display: block;
 }
 .product-added_to_cart>p {
-  font-family: "MuseoSans-5";
+  
   margin-bottom: .75rem;
 }
 .product-added_to_cart-item {
@@ -1415,7 +1448,7 @@ border-radius: 99px;
   width: 60%;
 }
 .product-added_to_cart-item article>b {
-  font-family: "MuseoSans-5";
+  
   font-size: 1rem;
 }
 .product-added_to_cart-item article>span {
@@ -1428,7 +1461,7 @@ border-radius: 99px;
   color: var(--dark);
 }
 .product-added_to_cart-item article div {
-  font-family: "MuseoSans-5";
+  
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -1502,20 +1535,20 @@ justify-content: flex-start;
 align-items: center;
 }
 .slider-item>div>div b, .slider-item a>div b {
-font-family: "MuseoSans-3";
+
   color: var(--black);
   font-size: .8rem;
   margin-right: 1rem;
 }
 .slider-item>div>p, .slider-item a>p {
-font-family: "MuseoSans-3";
+
 font-size: .8rem;
 margin: .75rem 0;
 }
 
 /* mobile title */
 .product-mobile-title {
-  font-family: "MuseoSans-7";
+  
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -1535,7 +1568,7 @@ margin: .75rem 0;
   align-items: center;
 }
 .product-info-price_mobile>p {
-  font-family: "MuseoSans-5";
+  
   font-size: 1.5rem;
   margin: 0 .5rem;
 }
@@ -1549,7 +1582,7 @@ width: 100%;
 
 /* -------- breadcrumb -----------*/
 .breadcrumb {
-  font-family: "MuseoSans-5";
+  
   width: 100%;
   max-width: 1260px;
   margin: auto;
@@ -1686,7 +1719,7 @@ width: 100%;
 }
 
 .catalog-pagination {
-  font-family: "MuseoSans-3";
+  
   width: 100%;
   text-align: center;
   color: var(--light1);
@@ -1800,7 +1833,6 @@ width: 100%;
   line-height: 0;
 }
 .checkout-breadcrumb-container {
-  font-family: 'MuseoSans-5';
   width: 100%;
   max-width: 1260px;
   margin: auto;
@@ -1855,7 +1887,6 @@ width: 100%;
   width: 100%;
 }
 .checkout-title {
-  font-family: 'MuseoSans-5';
   width: 100%;
   padding: 1rem 0;
   margin-bottom: 1.5rem;
@@ -1897,7 +1928,7 @@ form {
   font-weight: 400;
 }
 .form-input input, .form-input select, .form-selector input, .form-selector select {
-  font-family: 'MuseoSans-3';
+  font-weight: 300;
   padding: .75rem;
 }
 .form-disabled input {
@@ -1997,7 +2028,7 @@ form {
   border-radius: .3rem;
 }
 .checkout-summary-header {
-  font-family: 'MuseoSans-3';
+  font-weight: 300;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -2051,7 +2082,7 @@ form {
   margin-top: .25rem;
 }
 .checkout-summary-item div b {
-  font-family: 'MuseoSans-5';
+  font-weight: 700;
   color: var(--black);
   font-size: .85rem;
 }
@@ -2069,13 +2100,13 @@ form {
   padding: .25rem 0;
 }
 .checkout-summary-breakdown>div>p:first-child {
-  font-family: 'MuseoSans-3';
+  font-weight: 300;
   width: 45%;
   color: var(--dark);
   font-weight: 300;
 }
 .checkout-summary-breakdown>div>p:last-child {
-  font-family: 'MuseoSans-5';
+  font-weight: 500;
 }
 .checkout-summary-breakdown>div {
   width: 100%;
@@ -2102,12 +2133,12 @@ form {
   margin-right: .5rem;
 }
 .checkout-summary-total b {
-  font-family: 'MuseoSans-5';
+  font-weight: 700;
   color: var(--red2);
   margin-right: .5rem;
 }
 .checkout-summary-total span {
-  font-family: 'MuseoSans-3';
+  font-weight: 300;
   font-size: .75rem;
   font-weight: 300;
   color: var(--dark);
@@ -2124,7 +2155,7 @@ form {
   animation: fadeIn .3s ease;
   -webkit-animation: slideUp .3s ease;
   animation: slideUp .3s ease;
-  font-family: 'MuseoSans-5';
+  font-weight: 500;
 }
 .notification {
   width: 100%;
@@ -2417,7 +2448,7 @@ input:active, input:focus, select:active, select:focus, textarea:active, textare
     display: inline-block;
 }
   .product-info h2 {
-    font-family: "MuseoSans-7";
+    
     margin-bottom: .75rem;
 }
   .product-info {
@@ -2599,13 +2630,14 @@ input:active, input:focus, select:active, select:focus, textarea:active, textare
 .product-info h2 {
   margin-bottom: .75rem;
   font-size: 1.5em;
-  font-family: "MuseoSans-7";
+  
 }
 .product-favorite-guest div {
   display: inline-block;
 }
 .product-info h2{
   display: block;
+  font-weight: 700;
   }
   .product-info-price-desktop{
     /* display: block; */

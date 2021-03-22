@@ -58,7 +58,7 @@
   }
   
   .newsletter-form div label input {
-    font-family: "MuseoSans-3";
+    
     color: var(--dark);
     border: none;
     padding: 1rem 1rem 1rem 3.6rem;
@@ -187,13 +187,13 @@
   align-items: center;
 }
 .slider-item>div>div b, .slider-item a>div b {
-  font-family: "MuseoSans-3";
+  
     color: var(--black);
     font-size: .8rem;
     margin-right: 1rem;
 }
 .slider-item>div>p, .slider-item a>p {
-  font-family: "MuseoSans-3";
+  
   font-size: .8rem;
   margin: .75rem 0;
 }
@@ -221,7 +221,7 @@
         border: none;
     }
     .slider-item>div>div b, .slider-item a>div b {
-      font-family: "MuseoSans-3";
+      
         font-size: 1rem;
     }
   /* BOT MESSAGE */

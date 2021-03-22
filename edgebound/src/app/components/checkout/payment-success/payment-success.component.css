@@ -9,13 +9,13 @@
     margin-bottom: 1rem;
 }
 .checkout-success-header h1 {
-    font-family: 'MuseoSans-5';
+    
     font-size: 1.5rem;
     font-weight: 400;
     margin: 1rem 0;
 }
 .checkout-success-header div {
-  font-family: 'MuseoSans-5';
+  
     width: 100%;
 }
 .checkout-success-header div p {
@@ -26,7 +26,7 @@
     color: var(--blue);
 }
 .checkout-success-breakdown_offline_alert {
-    font-family: 'MuseoSans-5';
+    
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -95,7 +95,7 @@
     border-bottom: 1px solid var(--black);
 }
 .checkout-success-title h2 {
-    font-family: 'MuseoSans-5';
+    
     font-size: 1rem;
     font-weight: 400;
 }
@@ -105,7 +105,7 @@
     margin-bottom: 1rem;
 }
 .checkout-success-breakdown_method {
-    font-family: 'MuseoSans-5';
+    
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -136,7 +136,7 @@
     margin-right: .5rem;
 }
 .checkout-success-breakdown_offline_alert p {
-    font-family: 'MuseoSans-5';
+    
     width: 100%;
     font-weight: 700;
 }
@@ -153,7 +153,6 @@
     align-items: center;
 }
 .checkout-success-breakdown_totals div p {
-    font-family: 'MuseoSans-3';
     width: 80%;
     display: inline-block;
     font-size: 1.15rem;
@@ -161,7 +160,7 @@
     margin: .25rem 0;
 }
 .checkout-success-breakdown_totals div p:last-child {
-    font-family: 'MuseoSans-5';
+    
     color: var(--black);
     font-weight: 400;
 }
@@ -197,7 +196,7 @@
     font-size: .9rem;
 }
 .checkout-success-address p {
-    font-family: 'MuseoSans-3';
+    
     color: var(--dark);
     font-size: 1rem;
     font-weight: 300;

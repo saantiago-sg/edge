@@ -96,7 +96,7 @@
     cursor: pointer;
   }
   .login-password-rules {
-    font-family: "MuseoSans-5";
+    
     width: 100%;
     padding: 1rem 0;
     font-size: .85rem;
@@ -107,7 +107,7 @@
     margin-right: .25rem;
   }
   .login-password div span {
-    font-family: "MuseoSans-5";
+    
     font-size: .8rem;
   }
   .login-submit{
