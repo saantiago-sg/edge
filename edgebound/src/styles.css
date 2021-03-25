@@ -83,6 +83,18 @@
 .bg--green, .bg--verde {
   background-color: var(--green)!important;
 }
+.bg-green, .bg-verde {
+  background-color: var(--green)!important;
+}
+.color-green{
+color: var(--green);
+}
+.color-grey{
+  color: var(--grey);
+}
+.bg-grey{
+  background-color: var(--grey)!important;
+}
 
 body {
   font-family: "Museo Sans", sans-serif;
@@ -2210,9 +2222,10 @@ form {
   background-color: transparent;
   font-size: 1.5rem;
 }
-
-
 /* FIN DE CHECKOUT MOBILE */
+.toggle-edit{
+  display: none;
+}
 
 @media screen and (min-width: 760px){
   .op-0{

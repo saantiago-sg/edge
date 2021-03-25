@@ -27,6 +27,9 @@ import { PaymentSuccessComponent } from './components/checkout/payment-success/p
 import { DashboardLoggedComponent } from './components/dashboard-logged/dashboard-logged.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { NewAddressComponent } from './components/new-address/new-address.component';
+import { WishlistAddedComponent } from './components/wishlist-added/wishlist-added.component';
+import { DashboardLoggedAddComponent } from './components/dashboard-logged-add/dashboard-logged-add.component';
+import { OrderComponent } from './components/order/order.component';
 
 
 export const ROUTES: Routes = [
@@ -35,7 +38,10 @@ export const ROUTES: Routes = [
     { path: 'cart/items', component: CartItemsComponent },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'dashboard-logged', component: DashboardLoggedComponent },
+    { path: 'dashboard-logged-add', component: DashboardLoggedAddComponent },
+    { path: 'order', component: OrderComponent },
     { path: 'wishlist', component: WishlistComponent },
+    { path: 'wishlist-added', component: WishlistAddedComponent },
     { path: 'new-addres', component: NewAddressComponent },
     { path: 'recover', component: RecoverComponent },
     { path: 'search', component: SearchComponent },

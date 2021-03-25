@@ -1,0 +1,91 @@
+<app-nav-heart></app-nav-heart>
+<main>
+  <div class="breadcrumb">
+    <div class="breadcrumb-path">
+      <a routerLink="/home">
+        <span>Tienda</span>
+        <i class="material-icons">chevron_right</i>
+      </a>
+      <a routerLink="/dashboard">
+        <span>Detalles del pedido</span>
+      </a>
+    </div>
+    <div class="breadcrumb-espot">
+      <a routerLink="/envios">
+        <i class="material-icons">local_shipping</i>
+        <span>Envío gratis desde $900 MXN en CDMX y Zona Metropolitana</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="order-container">
+    <div class="order-status">
+      <div class="order-status-step">
+        <div class="order-status-step_icons">
+          <i class="material-icons color-green">radio_button_checked</i><span class="bg-green"></span></div>
+        <div class="order-status-step_info"><b>Pedido realizado</b>
+          <p></p>
+        </div>
+      </div>
+      <div class="order-status-step">
+        <div class="order-status-step_icons"><i class="material-icons color-grey">radio_button_checked</i><span
+            class="bg-grey"></span></div>
+        <div class="order-status-step_info"><b>En preparación</b>
+          <p>---</p>
+        </div>
+      </div>
+      <div class="order-status-step">
+        <div class="order-status-step_icons"><i class="material-icons color-grey">radio_button_checked</i><span
+            class="bg-grey"></span></div>
+        <div class="order-status-step_info"><b>En Camino</b>
+          <p>---</p>
+        </div>
+      </div>
+      <div class="order-status-step">
+        <div class="order-status-step_icons"><i class="material-icons color-grey">radio_button_checked</i><span
+            class="bg-grey"></span></div>
+        <div class="order-status-step_info"><b>Entregado</b>
+          <p>---</p>
+        </div>
+      </div>
+    </div>
+    <div class="order-header">
+      <div class="order-header-id"><b>Número de pedido:</b>
+        <p>957352316778</p>
+      </div>
+      <div class="order-header-address"><b>Dirección de entrega:</b>
+        <p>dwsodsaod, Exterior: 21, Interior: , Colonia: Axotla,Álvaro Obregón,Ref: </p>
+      </div>
+    </div>
+    <div class="order-items">
+      <article class="order-item">
+        <picture><img src="https://s3.amazonaws.com/llanomx.wcaas.media/907.103/907.103_1_120x120.jpg"
+            alt="LOSETA ALMENA FD 44X44 CAFE 1.54 1A"></picture>
+        <div>
+          <h4>LOSETA ALMENA FD 44X44 CAFE 1.54 1A</h4>
+          <p><b>$227.43</b></p>
+          <p>Cantidad: <b>1.0</b></p>
+        </div>
+      </article>
+    </div>
+    <div class="order-breakdown">
+      <div>
+        <p>Subtotal:</p><b>$227.43</b>
+      </div>
+      <div>
+        <p>Descuentos:</p><b>$0.00</b>
+      </div>
+      <div>
+        <p>Envío:</p><b>$190.00</b>
+      </div>
+      <div class="order-breakdown-total">
+        <p>TOTAL:</p><b>$417.43</b>
+      </div>
+      <div class="order-breakdown-method"><img alt="method_name" src="/assets/img/card-visa.svg">
+        <p>Tarjetas de Crédito y Débito (Visa / MasterCard)</p>
+      </div>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>

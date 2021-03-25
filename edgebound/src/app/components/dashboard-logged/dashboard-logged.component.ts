@@ -47,5 +47,10 @@ export class DashboardLoggedComponent {
    suggetion?.classList.toggle('show-suggetions');
    }
 
+    // tslint:disable-next-line:typedef
+    toggleEdit(){
+    const profileForm = document.querySelector('.dashboard-profile-form');
+    profileForm?.classList.toggle('toggle-edit');
+    }
 
 }

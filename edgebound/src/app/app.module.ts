@@ -38,6 +38,10 @@ import { PaymentSuccessComponent } from './components/checkout/payment-success/p
 import { DashboardLoggedComponent } from './components/dashboard-logged/dashboard-logged.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { NewAddressComponent } from './components/new-address/new-address.component';
+import { WishlistAddedComponent } from './components/wishlist-added/wishlist-added.component';
+import { NavHeartComponent } from './components/nav-heart/nav-heart.component';
+import { DashboardLoggedAddComponent } from './components/dashboard-logged-add/dashboard-logged-add.component';
+import { OrderComponent } from './components/order/order.component';
 
 // pipes
 
@@ -75,7 +79,11 @@ import { NewAddressComponent } from './components/new-address/new-address.compon
     PaymentSuccessComponent,
     DashboardLoggedComponent,
     WishlistComponent,
-    NewAddressComponent
+    NewAddressComponent,
+    WishlistAddedComponent,
+    NavHeartComponent,
+    DashboardLoggedAddComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

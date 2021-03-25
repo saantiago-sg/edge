@@ -1,0 +1,106 @@
+<app-nav-heart></app-nav-heart>
+<main>
+  <div class="breadcrumb">
+    <div class="breadcrumb-path">
+      <a routerLink="/home">
+        <span>Tienda</span>
+        <i class="material-icons">chevron_right</i>
+      </a>
+      <a routerLink="/dashboard">
+        <span>Mi cuenta</span>
+      </a>
+    </div>
+    <div class="breadcrumb-espot">
+      <a routerLink="/envios">
+        <i class="material-icons">local_shipping</i>
+        <span>Envío gratis desde $900 MXN en CDMX y Zona Metropolitana</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="dashboard-container">
+    <div>
+      <div class="dashboard-block dashboard-profile">
+        <div class="dashboard-title">
+          <h3>Perfil</h3>
+        </div>
+        <div class="dashboard-profile-content">
+          <picture class="dashboard-profile-picture"><img
+              src="https://s3.amazonaws.com/llanomx.wcaas.media/000.00/000.00_1_400x400.jpg" alt="user"></picture>
+          <div class="dashboard-profile-info">
+            <h4>saantiagosg@gmail.com</h4>
+            <p>santiago gauna</p>
+            <p>1212121232</p>
+            <p>1999-01-02</p><button (click)="toggleEdit()"><i class="material-icons ">edit</i><span>Editar</span></button>
+          </div>
+        </div>
+        <div class="dashboard-profile-logout"><button routerLink="/dashboard"><span>Cerrar sesión</span><i
+              class="material-icons ">exit_to_app</i></button></div>
+              <form class="dashboard-profile-form"><label class="input-global "><span>Nombre</span><input type="text" placeholder="Nombre" value="santiago"></label><label class="input-global "><span>Apellido</span><input type="text" placeholder="Apellido" value="gauna"></label><label class="input-global "><span>Teléfono</span><input type="text" placeholder="10 dígitos" maxlength="10" value="1212121232"></label><label class="input-global "><span>Cumpleaños</span><input type="date" placeholder="00/00/0000" value="1999-01-02"></label><div class="form-radio-custom"><p></p><label class="form-radio "><input type="radio" name="gender" value="Female"><span>Mujer</span></label><label class="form-radio "><input type="radio" name="gender" value="Male" checked=""><span>Hombre</span></label></div><p class="copy">Sólo te contactaremos por teléfono para temas relacionados a tus pedidos, si es necesario.</p><button>Guardar</button></form>
+      </div>
+      <div class="dashboard-block dashboard-address_book">
+        <div class="dashboard-title">
+          <h3>Mis direcciones</h3>
+        </div>
+        <div class="dashboard-address_book-content ">
+          <div class="dashboard-address_book-item">
+            <h4><i class="material-icons ">star</i> Santiago</h4>
+            <p>dhers, Exterior: 33, Interior: N/A, Colonia: Florida Álvaro Obregón, Ref: , Distrito Federal, 01030</p>
+            <button routerLink="/dashboard-logged"><i class="material-icons ">delete</i><span>Eliminar</span></button>
+          </div>
+        </div>
+        <div class="dashboard-address_book-add"><a routerLink="/new-addres"><i
+              class="material-icons ">add</i><span>Agregar</span></a></div>
+      </div>
+    </div>
+    <div class="dashboard-block dashboard-orders">
+      <div class="dashboard-title">
+        <h3>Mis pedidos</h3>
+      </div>
+      <div class="dashboard-orders-content ">
+        <div class="dashboard-orders-item">
+          <div>
+            <p>ID:</p><b>957352316778</b>
+          </div>
+          <div>
+            <p>Status:</p><b class="color-grey">Pedido realizado</b>
+          </div>
+          <div>
+            <p>Productos:</p><b>1</b>
+          </div>
+          <div>
+            <p>Fecha:</p><b>24/03/20</b>
+          </div>
+          <div>
+            <p>Total:</p><b>$417.43</b>
+          </div>
+          <div><a routerLink="/order">ver detalles</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-block dashboard-wishlist">
+      <div class="dashboard-title">
+        <h3>Mis favoritos</h3>
+      </div>
+      <div class="dashboard-wishlist-content ">
+        <div class="dashboard-wishlist-item"><a href="/wishlist">
+            <picture><img src="https://s3.amazonaws.com/llanomx.wcaas.media/1.152/1.152_1_120x120.jpg"
+                alt="LOSETA MADERA DABA 20X90 IVORY 1.62 1A"></picture>
+            <div>
+              <h4>LOSETA MADERA DABA 20X90 IVORY 1.62 1A</h4>
+              <div>
+                <p class="color-black">$483.71</p>
+              </div>
+            </div>
+          </a></div>
+      </div>
+      <div class="dashboard-wishlist-more">
+        <div><a routerLink="/wishlist-added"><span>ver todos / editar</span><i
+              class="material-icons ">chevron_right</i></a></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<app-footer></app-footer>
